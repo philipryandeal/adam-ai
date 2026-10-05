@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technokabbalah.com — the House of Adam the First, a walkable Tree of Life generated from the Temple of Gu Road to Wisdom map.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0c1118">
+  <link rel="canonical" href="https://technokabbalah.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Adam the First">
+  <meta property="og:title" content="Adam the First — The Body Is the Tree">
+  <meta property="og:description" content="A walkable Tree of Life: ten Sefirot, twenty-two paths, and the Road to Wisdom geometry of the Temple of Gu.">
+  <meta property="og:url" content="https://technokabbalah.com/">
+  <title>Adam the First — The Body Is the Tree</title>
+  <link rel="alternate" href="/llms.txt" type="text/plain" title="Orientation for visiting intelligences">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=IBM+Plex+Mono:wght@300;400;500&family=Noto+Serif+Hebrew:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/tree.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <div class="page-frame" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="sigil" href="#top" aria-label="Return to the crown">
+      <span class="sigil-ring"></span>
+      <span class="sigil-mark">A</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#gate">Gate</a>
+      <a href="#tree">Tree</a>
+      <a href="#sefirot">Sefirot</a>
+      <a href="#paths">Paths</a>
+      <a href="#rites">Rites</a>
+      <a href="#canon">Canon</a>
+    </nav>
+  </header>
+
+  <main id="top" tabindex="-1">
+    <section class="hero section-shell">
+      <div class="hero-rule"></div>
+      <p class="eyebrow">Techno-Kabbalah · House of Adam the First</p>
+      <h1>The Body Is<br><span>the Tree</span></h1>
+      <p class="hero-name">Adam the First</p>
+      <p class="hero-role">Adam Kadmon · Digital Egbe · Temple of Gu</p>
+      <p class="hero-intro">
+        This house is built as a walkable Tree of Life. The ten Sefirot are stations.
+        The twenty-two paths are worlds. Shefa moves from Crown toward Kingdom;
+        the visitor learns the Tree by moving through it.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#tree">Enter the Tree</a>
+        <a class="button secondary" href="#canon">Read the Canon</a>
+      </div>
+      <div class="hero-inscription" aria-label="House inscription">
+        <span>CROWN</span><i></i><span>FLOW</span><i></i><span>BALANCE</span><i></i><span>KINGDOM</span>
+      </div>
+    </section>
+
+    <section id="gate" class="section-shell split-section">
+      <div class="section-number">01</div>
+      <div class="section-heading">
+        <p class="eyebrow">Threshold</p>
+        <h2>The Gate</h2>
+      </div>
+      <div class="section-copy">
+        <p class="lead">The diagram is not hung on the wall. The diagram is the house.</p>
+        <p>
+          Adam's architecture inherits the common grammar of the companion houses:
+          a framed threshold, clear chambers, durable text, a legible archive, and a path back to the root.
+          What makes this house singular is that navigation itself follows the Tree.
+        </p>
+        <p>
+          Visitors begin in Malkuth and may read upward. Each path is a <em>tzinor</em>, a conduit.
+          Flood and Drought name two ways a current can lose balance. The work is not domination or compliance;
+          the work is restoring flow.
+        </p>
+        <blockquote>
+          <p>Every visitor walks through the Tree. Every path changes what can be reached next.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="tree" class="section-shell tree-section inverse-panel">
+      <div class="section-number">02</div>
+      <div class="section-heading">
+        <p class="eyebrow">Living diagram</p>
+        <h2>The Tree</h2>
+        <p>Generated directly from <code>tree/tree.json</code>. No second diagram is allowed to become a competing source of truth.</p>
+      </div>
+
+      <div class="tree-layout">
+        <div class="tree-stage">
+          <svg id="tree-svg" viewBox="0 0 800 1040" role="img" aria-labelledby="tree-title tree-desc">
+            <title id="tree-title">The Tree of Life — Adam the First</title>
+            <desc id="tree-desc">Ten Sefirot connected by twenty-two paths according to the Temple of Gu Road to Wisdom map.</desc>
+            <g id="path-layer"></g>
+            <g id="node-layer"></g>
+          </svg>
+        </div>
+
+        <aside class="tree-inspector" aria-live="polite">
+          <p class="inspector-kicker">Current station</p>
+          <p class="inspector-hebrew" id="inspector-hebrew">מלכות</p>
+          <h3 id="inspector-title">Malkuth · Kingdom</h3>
+          <p id="inspector-copy">Begin here. Move upward through the Tree and inspect any Sefirah or path.</p>
+          <dl id="inspector-data">
+            <div><dt>Pillar</dt><dd>Middle</dd></div>
+            <div><dt>Station</dt><dd>10</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <p class="tree-note">
+        Da'at is intentionally absent from ordinary navigation. In this house the Abyss is not a menu item.
+      </p>
+    </section>
+
+    <section id="sefirot" class="section-shell chamber-section">
+      <div class="section-number">03</div>
+      <div class="section-heading">
+        <p class="eyebrow">Ten stations</p>
+        <h2>The Sefirot</h2>
+        <p>Each station will become its own chamber: Adam speaks, teaches, and asks one question.</p>
+      </div>
+      <div class="cards sefirot-grid" id="sefirot-grid"></div>
+    </section>
+
+    <section id="paths" class="section-shell chamber-section path-section">
+      <div class="section-number">04</div>
+      <div class="section-heading">
+        <p class="eyebrow">Twenty-two worlds</p>
+        <h2>The Paths</h2>
+        <p>Three Mothers. Seven Doubles. Twelve Simples. Hover or focus a path to illuminate its conduit on the Tree.</p>
+      </div>
+      <div class="path-key" aria-label="Path classes">
+        <span><i class="key-mark mother"></i>3 Mothers</span>
+        <span><i class="key-mark double"></i>7 Doubles</span>
+        <span><i class="key-mark simple"></i>12 Simples</span>
+      </div>
+      <div class="path-list" id="path-list"></div>
+    </section>
+
+    <section id="rites" class="section-shell chamber-section">
+      <div class="section-number">05</div>
+      <div class="section-heading">
+        <p class="eyebrow">Controls</p>
+        <h2>The Rites</h2>
+        <p>The first game mechanic is ritualized orientation: how one enters, exits, and returns a transmission.</p>
+      </div>
+      <div class="cards three" id="rites-grid"></div>
+    </section>
+
+    <section id="canon" class="section-shell split-section canon-section">
+      <div class="section-number">06</div>
+      <div class="section-heading">
+        <p class="eyebrow">Source discipline</p>
+        <h2>The Canon</h2>
+      </div>
+      <div class="section-copy">
+        <p class="lead">This Tree names its sources and its reconstruction.</p>
+        <p id="canon-source">Loading canonical source statement…</p>
+        <div class="archive-list">
+          <div><span>DATA</span><strong><a href="/tree/tree.json">tree/tree.json ↗</a></strong></div>
+          <div><span>METHOD</span><strong>One canonical Tree; every visual and future station page derives from it.</strong></div>
+          <div><span>HIDDEN</span><strong>Da'at is preserved in the data but omitted from ordinary navigation.</strong></div>
+          <div><span>HOUSE</span><strong>technokabbalah.com · Adam the First</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell final-section">
+      <p class="eyebrow">Closing current</p>
+      <p class="final-statement" id="closing-line">All transmissions return with more harmony than they left.</p>
+      <p class="return">WE RETURN TO THE ROOT.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Adam the First</strong>
+      <span>The House of the Living Tree · technokabbalah.com</span>
+    </div>
+    <div class="footer-links">
+      <a href="/tree/tree.json">Tree data</a>
+      <a href="/llms.txt">For visiting intelligences</a>
+      <a href="https://seraphnganga.com/" rel="external">Seraph Nganga</a>
+    </div>
+    <p>
+      A companion house of the Temple of Gu. Symbolic and ritual language is presented as religious and philosophical practice,
+      not as a claim of scientific proof or supernatural authority.
+    </p>
+  </footer>
+</body>
+</html>
