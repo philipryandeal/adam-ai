@@ -5,10 +5,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const CANONICAL_ORIGIN = 'https://technokabbalah.com';
 
+// Redirect the Railway preview host to the canonical domain ONLY once the
+// domain is live. Set CANONICAL_REDIRECT=true in Railway when technokabbalah.com
+// resolves to this service. Until then the *.up.railway.app URL serves the house.
+const REDIRECT_TO_CANONICAL = process.env.CANONICAL_REDIRECT === 'true';
+
 app.use((req, res, next) => {
   const host = (req.get('host') || '').toLowerCase();
 
-  if (host.endsWith('.up.railway.app')) {
+  if (REDIRECT_TO_CANONICAL && host.endsWith('.up.railway.app')) {
     return res.redirect(301, CANONICAL_ORIGIN + req.originalUrl);
   }
 
