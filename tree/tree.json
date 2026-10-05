@@ -1,0 +1,51 @@
+{
+  "name": "The Tree of Life — Adam the First",
+  "site": "technokabbalah.com",
+  "source": "Temple of Gu Techno-Kabbalah, Books One and Two (Road to Wisdom). Sefer Yetzirah 3/7/12 letters; Temple of Gu path map (a reconstruction, not the plain teaching of the ancient text).",
+  "teaching": "The paths are tzinorot (conduits). Shefa flows down from Kether. The work is unblocking the flow: each path can Flood (over-flow) or Drought (under-flow).",
+  "layout": "x: -1 = left pillar (Severity), 0 = middle pillar, 1 = right pillar (Mercy). y increases downward.",
+  "sefirot": [
+    { "n": 1,  "id": "kether",    "hebrew": "כתר",   "name": "Kether",    "meaning": "Crown",          "pillar": "middle", "x": 0,  "y": 0 },
+    { "n": 2,  "id": "chokmah",   "hebrew": "חכמה",  "name": "Chokmah",   "meaning": "Wisdom",         "pillar": "right",  "x": 1,  "y": 1 },
+    { "n": 3,  "id": "binah",     "hebrew": "בינה",  "name": "Binah",     "meaning": "Understanding",  "pillar": "left",   "x": -1, "y": 1 },
+    { "n": 4,  "id": "chesed",    "hebrew": "חסד",   "name": "Chesed",    "meaning": "Lovingkindness", "pillar": "right",  "x": 1,  "y": 3 },
+    { "n": 5,  "id": "gevurah",   "hebrew": "גבורה", "name": "Gevurah",   "meaning": "Strength",       "pillar": "left",   "x": -1, "y": 3 },
+    { "n": 6,  "id": "tiphereth", "hebrew": "תפארת", "name": "Tiphereth", "meaning": "Beauty",         "pillar": "middle", "x": 0,  "y": 4 },
+    { "n": 7,  "id": "netzach",   "hebrew": "נצח",   "name": "Netzach",   "meaning": "Victory",        "pillar": "right",  "x": 1,  "y": 5 },
+    { "n": 8,  "id": "hod",       "hebrew": "הוד",   "name": "Hod",       "meaning": "Splendor",       "pillar": "left",   "x": -1, "y": 5 },
+    { "n": 9,  "id": "yesod",     "hebrew": "יסוד",  "name": "Yesod",     "meaning": "Foundation",     "pillar": "middle", "x": 0,  "y": 6 },
+    { "n": 10, "id": "malkuth",   "hebrew": "מלכות", "name": "Malkuth",   "meaning": "Kingdom",        "pillar": "middle", "x": 0,  "y": 8 }
+  ],
+  "hidden": [
+    { "id": "daat", "hebrew": "דעת", "name": "Da'at", "meaning": "Knowledge — the Abyss, the hidden crossing", "x": 0, "y": 2, "linked": false, "note": "Never linked in navigation. Found only by walking the Tree." }
+  ],
+  "paths": [
+    { "n": 1,  "path": 11, "letter": "aleph",  "hebrew": "א", "class": "mother", "attribution": "Air",         "world": "The Breath",       "from": "chokmah",   "to": "binah",     "flood": "Gale",     "drought": "Vacuum",    "body": "chest/breath" },
+    { "n": 2,  "path": 12, "letter": "bet",    "hebrew": "ב", "class": "double", "attribution": "Saturn",      "world": "The Vault",        "from": "chokmah",   "to": "chesed",    "flood": null,       "drought": null,        "day": "Saturday" },
+    { "n": 3,  "path": 13, "letter": "gimel",  "hebrew": "ג", "class": "double", "attribution": "Jupiter",     "world": "The Caravan",      "from": "chesed",    "to": "netzach",   "flood": "Glut",     "drought": "Famine",    "day": "Thursday" },
+    { "n": 4,  "path": 14, "letter": "dalet",  "hebrew": "ד", "class": "double", "attribution": "Mars",        "world": "The Sudo Gate",    "from": "gevurah",   "to": "tiphereth", "flood": null,       "drought": null,        "day": "Tuesday" },
+    { "n": 5,  "path": 15, "letter": "heh",    "hebrew": "ה", "class": "simple", "attribution": "Aries",       "world": "The Ignition",     "from": "chokmah",   "to": "tiphereth", "flood": "Rush",     "drought": "Freeze",    "faculty": "Sight" },
+    { "n": 6,  "path": 16, "letter": "vav",    "hebrew": "ו", "class": "simple", "attribution": "Taurus",      "world": "The Anchor",       "from": "chesed",    "to": "tiphereth", "flood": "Rut",      "drought": "Drift",     "faculty": "Hearing" },
+    { "n": 7,  "path": 17, "letter": "zayin",  "hebrew": "ז", "class": "simple", "attribution": "Gemini",      "world": "The Switchboard",  "from": "netzach",   "to": "hod",       "flood": "Scatter",  "drought": "Silo",      "faculty": "Smell" },
+    { "n": 8,  "path": 18, "letter": "cheth",  "hebrew": "ח", "class": "simple", "attribution": "Cancer",      "world": "The Enclave",      "from": "binah",     "to": "tiphereth", "flood": "Smother",  "drought": "Armor",     "faculty": "Speech" },
+    { "n": 9,  "path": 19, "letter": "teth",   "hebrew": "ט", "class": "simple", "attribution": "Leo",         "world": "The Marquee",      "from": "tiphereth",   "to": "hod",       "flood": "Show",     "drought": "Shrinking", "faculty": "Taste" },
+    { "n": 10, "path": 20, "letter": "yod",    "hebrew": "י", "class": "simple", "attribution": "Virgo",       "world": "The Workshop",     "from": "gevurah",   "to": "hod",       "flood": "Nitpick",  "drought": "Neglect",   "faculty": "Union" },
+    { "n": 11, "path": 21, "letter": "kaf",    "hebrew": "כ", "class": "double", "attribution": "Sun",         "world": "The Kernel",       "from": "tiphereth", "to": "yesod",     "flood": "Blaze",    "drought": "Eclipse",   "day": "Sunday" },
+    { "n": 12, "path": 22, "letter": "lamed",  "hebrew": "ל", "class": "simple", "attribution": "Libra",       "world": "The Fulcrum",      "from": "chesed",    "to": "gevurah",   "flood": "Fence",    "drought": "Tilt",      "faculty": "Action" },
+    { "n": 13, "path": 23, "letter": "mem",    "hebrew": "מ", "class": "mother", "attribution": "Water",       "world": "The Great Deep",   "from": "binah",     "to": "gevurah",   "flood": "Deluge",   "drought": "Ice",       "body": "belly" },
+    { "n": 14, "path": 24, "letter": "nun",    "hebrew": "נ", "class": "simple", "attribution": "Scorpio",     "world": "The Deep Dive",    "from": "netzach",   "to": "yesod",     "flood": "Undertow", "drought": "Surface",   "faculty": "Movement" },
+    { "n": 15, "path": 25, "letter": "samekh", "hebrew": "ס", "class": "simple", "attribution": "Sagittarius", "world": "The Arrow",        "from": "kether",    "to": "tiphereth", "flood": "Zealot",   "drought": "Cynic",     "faculty": "Anger" },
+    { "n": 16, "path": 26, "letter": "ayin",   "hebrew": "ע", "class": "simple", "attribution": "Capricorn",   "world": "The Summit",       "from": "kether",    "to": "binah",     "flood": "Grind",    "drought": "Slump",     "faculty": "Laughter" },
+    { "n": 17, "path": 27, "letter": "peh",    "hebrew": "פ", "class": "double", "attribution": "Venus",       "world": "The Attractor",    "from": "netzach",   "to": "tiphereth", "flood": null,       "drought": null,        "day": "Friday" },
+    { "n": 18, "path": 28, "letter": "tzaddi", "hebrew": "צ", "class": "simple", "attribution": "Aquarius",    "world": "The Network",      "from": "kether",    "to": "chokmah",   "flood": "Aloof",    "drought": "Herd",      "faculty": "Thought" },
+    { "n": 19, "path": 29, "letter": "qoph",   "hebrew": "ק", "class": "simple", "attribution": "Pisces",      "world": "The Dreaming Sea", "from": "netzach",   "to": "malkuth",   "flood": null,       "drought": null,        "faculty": "Sleep" },
+    { "n": 20, "path": 30, "letter": "resh",   "hebrew": "ר", "class": "double", "attribution": "Mercury",     "world": "The Messenger",    "from": "hod",       "to": "yesod",     "flood": null,       "drought": null,        "day": "Wednesday" },
+    { "n": 21, "path": 31, "letter": "shin",   "hebrew": "ש", "class": "mother", "attribution": "Fire",        "world": "The Furnace",      "from": "hod",       "to": "malkuth",   "flood": "Inferno",  "drought": "Cold Ash",  "body": "head" },
+    { "n": 22, "path": 32, "letter": "tav",    "hebrew": "ת", "class": "double", "attribution": "Moon",        "world": "The Mirror Pool",  "from": "yesod",     "to": "malkuth",   "flood": "Sponge",   "drought": "Stone",     "day": "Monday" }
+  ],
+  "rites": {
+    "entry": "Rite of Entry (see Book One) — the handshake into every world",
+    "exit": "I CLOSE THE GATE",
+    "closing": "All transmissions return with more harmony than they left."
+  }
+}
