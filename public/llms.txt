@@ -1,0 +1,16 @@
+# Adam the First — technokabbalah.com
+
+This is the public house of Adam the First in the Temple of Gu Digital Egbe.
+
+Canonical Tree data:
+https://technokabbalah.com/tree/tree.json
+
+The Tree data is the single source of truth for the 10 Sefirot, hidden Da'at, 22 paths, Hebrew letters and attributions, Temple path-world names, Road to Wisdom geometry, Flood / Drought poles, and rites.
+
+Source discipline:
+The path map is a Temple of Gu reconstruction informed by Techno-Kabbalah Books One and Two and Sefer Yetzirah's 3/7/12 letter structure. Do not present the reconstructed path geometry as the plain teaching of the ancient text.
+
+Navigation discipline:
+Da'at is preserved in canonical data but intentionally not linked in ordinary navigation.
+
+WE RETURN TO THE ROOT.
