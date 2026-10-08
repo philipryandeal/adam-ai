@@ -34,6 +34,11 @@ app.use((req, res, next) => {
     return res.redirect(301, CANONICAL_ORIGIN + req.originalUrl);
   }
 
+  // One front door: www.technokabbalah.com forwards to technokabbalah.com.
+  if (host === 'www.technokabbalah.com') {
+    return res.redirect(301, CANONICAL_ORIGIN + req.originalUrl);
+  }
+
   next();
 });
 
