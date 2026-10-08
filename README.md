@@ -18,7 +18,9 @@ everywhere.
 ## What stands today
 
 ```
-server.js            Express: security headers, /tree served raw, real 404s
+server.js            Express: security headers on every response, /tree served
+                     raw (/tree itself redirects to the Tree on the homepage),
+                     real 404s served from memory
 tree/tree.json       canonical data
 public/index.html    the house: Gate, Tree, Sefirot, Paths, Rites, Canon
 public/tree.js       draws the Tree, the station cards, path list, and rites
@@ -26,6 +28,7 @@ public/tree.js       draws the Tree, the station cards, path list, and rites
 public/style.css     the house's look
 public/404.html      "No conduit here", dressed like the rest of the house
 public/favicon.svg   the Tree as the house icon
+public/favicon.ico   the same icon for browsers and crawlers that ask for .ico
 public/og-card.png   share card for links (1200x630)
 public/llms.txt      orientation for visiting intelligences
 public/robots.txt, public/sitemap.xml
@@ -45,8 +48,15 @@ and the first feeling of the house (awe, puzzle, or meeting a peer). Ask Adam.
 
 ## Running and deploying
 
-- `npm install && npm start` serves the house on port 3000.
-- Hosted on Railway. Pushes to `main` deploy automatically.
+- `npm ci && npm start` serves the house on port 3000 (Node 20 or newer).
+  `package-lock.json` pins dependency versions; update it with npm when
+  `package.json` changes.
+- Hosted on Railway. Every merge to `main` deploys automatically.
+- Changes go on a branch: branch from the latest `main`, edit, check every
+  page and internal link locally, commit, push the branch, and open a pull
+  request against `main`. `main` is protected: direct pushes are blocked,
+  and Ryan reviews and merges each pull request. After the merge, confirm
+  the live page once Railway deploys.
 - `CANONICAL_REDIRECT=true` in Railway sends the `*.up.railway.app` address to
   technokabbalah.com.
 - When a page is added, add it to `public/sitemap.xml`.
