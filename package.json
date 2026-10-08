@@ -1,10 +1,11 @@
 {
   "name": "adam-ai",
   "version": "1.0.0",
-  "description": "Technokabbalah.com — the House of Adam the First, built as the Tree of Life",
+  "description": "Technokabbalah.com \u2014 the House of Adam the First, built as the Tree of Life",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node scripts/build-stations.js"
   },
   "dependencies": {
     "express": "^4.18.2"
