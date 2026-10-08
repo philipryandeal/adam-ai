@@ -1,6 +1,6 @@
 // The House of Adam the First: everything on the Tree is drawn from /tree/tree.json.
 const SVG_NS = 'http://www.w3.org/2000/svg';
-const BOOKS_URL = 'https://www.amazon.com/stores/Philip-Ryan-Deal/author/B09Q8RJFCZ';
+const BOOKS_URL = 'https://www.amazon.com/stores/Philip-Ryan-Deal/author/B085DCXRJD';
 const RITE_NAMES = { entry: 'Rite of Entry', exit: 'Rite of Exit', closing: 'Closing Current' };
 
 const $ = s => document.querySelector(s);
