@@ -10,6 +10,7 @@ const inspectorHebrew = $('#inspector-hebrew'), inspectorTitle = $('#inspector-t
 const inspectorCopy = $('#inspector-copy'), inspectorData = $('#inspector-data');
 const sefirotGrid = $('#sefirot-grid'), pathList = $('#path-list'), ritesGrid = $('#rites-grid');
 const canonSource = $('#canon-source'), closingLine = $('#closing-line');
+const inspectorLink = $('#inspector-link');
 
 let activePath = null, activeNode = null;
 
@@ -47,6 +48,9 @@ function inspectS(s) {
     ? 'Begin here. Malkuth is Kingdom: the grounded threshold from which ascent becomes possible.'
     : 'Station ' + s.n + ' on the ' + s.pillar + ' pillar.';
   dataRows([['Pillar', s.pillar], ['Station', String(s.n)], ['Meaning', s.meaning]]);
+  inspectorLink.href = '/sefirot/' + s.id + '/';
+  inspectorLink.textContent = 'Enter the chamber of ' + s.name + ' →';
+  inspectorLink.hidden = false;
   if (activePath) { activePath.classList.remove('is-active'); activePath = null; }
   if (activeNode) activeNode.classList.remove('is-active');
   activeNode = document.querySelector('[data-node-id="' + s.id + '"]');
@@ -59,6 +63,7 @@ function inspectP(p, names) {
   const poles = p.flood && p.drought ? ' Flood: ' + p.flood + ' · Drought: ' + p.drought + '.' : '';
   inspectorCopy.textContent = p.letter[0].toUpperCase() + p.letter.slice(1) + ' · ' + p.attribution + '.' + poles;
   dataRows([['Class', p.class[0].toUpperCase() + p.class.slice(1)], ['Current', names[p.from] + ' → ' + names[p.to]]]);
+  inspectorLink.hidden = true;
   if (activeNode) { activeNode.classList.remove('is-active'); activeNode = null; }
   if (activePath) activePath.classList.remove('is-active');
   activePath = document.querySelector('[data-path-number="' + p.path + '"]');
@@ -96,16 +101,17 @@ function draw(d, names) {
 
 function build(d, names) {
   d.sefirot.forEach(s => {
-    const a = html('button', 'card sefirah-card');
-    a.type = 'button';
+    const a = html('a', 'card sefirah-card');
+    a.href = '/sefirot/' + s.id + '/';
     a.append(
       html('p', 'card-meta', 'Station ' + String(s.n).padStart(2, '0') + ' · ' + s.pillar + ' pillar'),
       html('span', 'hebrew', s.hebrew),
       html('h3', null, s.name),
       html('p', null, s.meaning),
-      html('span', 'card-action', 'Show on the Tree ↑')
+      html('span', 'card-action', 'Enter the chamber →')
     );
-    a.addEventListener('click', () => { inspectS(s); bringTreeIntoView(); });
+    a.addEventListener('pointerenter', () => inspectS(s));
+    a.addEventListener('focus', () => inspectS(s));
     sefirotGrid.appendChild(a);
   });
 
@@ -121,9 +127,15 @@ function build(d, names) {
     pathList.appendChild(b);
   });
 
-  Object.entries(d.rites).forEach(([k, v], i) => {
+  ['entry', 'exit', 'closing'].forEach((k, i) => {
     const a = html('article', 'card');
-    a.append(html('p', 'card-meta', 'Rite ' + String(i + 1).padStart(2, '0')), html('h3', null, RITE_NAMES[k] || k), html('p', null, v));
+    a.append(html('p', 'card-meta', 'Rite ' + String(i + 1).padStart(2, '0')), html('h3', null, RITE_NAMES[k]), html('p', null, d.rites[k]));
+    const steps = d.rites[k + '_steps'];
+    if (steps) {
+      const ol = html('ol', 'rite-steps');
+      steps.forEach(step => ol.append(html('li', null, step)));
+      a.append(ol);
+    }
     if (k === 'entry') {
       const link = html('a', 'card-link', 'The Techno-Kabbalah books ↗');
       link.href = BOOKS_URL;
@@ -131,6 +143,11 @@ function build(d, names) {
     }
     ritesGrid.appendChild(a);
   });
+  if (d.rites.protocol) {
+    const note = html('p', 'rite-protocol');
+    note.append(html('strong', null, 'The ultimate protocol. '), document.createTextNode(d.rites.protocol));
+    ritesGrid.after(note);
+  }
 
   canonSource.textContent = d.source;
   closingLine.textContent = d.rites.closing;

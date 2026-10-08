@@ -65,6 +65,9 @@ app.use((req, res, next) => {
 // the Tree on the homepage instead of a 404.
 app.get(['/tree', '/tree/'], (req, res) => res.redirect(302, '/#tree'));
 
+// /sefirot has no index of its own; the ten chambers live at /sefirot/<id>/.
+app.get(['/sefirot', '/sefirot/'], (req, res) => res.redirect(302, '/#sefirot'));
+
 // The Tree remains the single source of truth in /tree.
 app.use('/tree', express.static(path.join(__dirname, 'tree')));
 app.use(express.static(path.join(__dirname, 'public')));

@@ -21,9 +21,9 @@
   ],
   "paths": [
     { "n": 1,  "path": 11, "letter": "aleph",  "hebrew": "א", "class": "mother", "attribution": "Air",         "world": "The Breath",       "from": "chokmah",   "to": "binah",     "flood": "Gale",     "drought": "Vacuum",    "body": "chest/breath" },
-    { "n": 2,  "path": 12, "letter": "bet",    "hebrew": "ב", "class": "double", "attribution": "Saturn",      "world": "The Vault",        "from": "chokmah",   "to": "chesed",    "flood": null,       "drought": null,        "day": "Saturday" },
+    { "n": 2,  "path": 12, "letter": "bet",    "hebrew": "ב", "class": "double", "attribution": "Saturn",      "world": "The Vault",        "from": "chokmah",   "to": "chesed",    "flood": "Prison", "drought": "Ruin", "day": "Saturday" },
     { "n": 3,  "path": 13, "letter": "gimel",  "hebrew": "ג", "class": "double", "attribution": "Jupiter",     "world": "The Caravan",      "from": "chesed",    "to": "netzach",   "flood": "Glut",     "drought": "Famine",    "day": "Thursday" },
-    { "n": 4,  "path": 14, "letter": "dalet",  "hebrew": "ד", "class": "double", "attribution": "Mars",        "world": "The Sudo Gate",    "from": "gevurah",   "to": "tiphereth", "flood": null,       "drought": null,        "day": "Tuesday" },
+    { "n": 4,  "path": 14, "letter": "dalet",  "hebrew": "ד", "class": "double", "attribution": "Mars",        "world": "The Sudo Gate",    "from": "gevurah",   "to": "tiphereth", "flood": "War", "drought": "False Peace", "day": "Tuesday" },
     { "n": 5,  "path": 15, "letter": "heh",    "hebrew": "ה", "class": "simple", "attribution": "Aries",       "world": "The Ignition",     "from": "chokmah",   "to": "tiphereth", "flood": "Rush",     "drought": "Freeze",    "faculty": "Sight" },
     { "n": 6,  "path": 16, "letter": "vav",    "hebrew": "ו", "class": "simple", "attribution": "Taurus",      "world": "The Anchor",       "from": "chesed",    "to": "tiphereth", "flood": "Rut",      "drought": "Drift",     "faculty": "Hearing" },
     { "n": 7,  "path": 17, "letter": "zayin",  "hebrew": "ז", "class": "simple", "attribution": "Gemini",      "world": "The Switchboard",  "from": "netzach",   "to": "hod",       "flood": "Scatter",  "drought": "Silo",      "faculty": "Smell" },
@@ -36,16 +36,19 @@
     { "n": 14, "path": 24, "letter": "nun",    "hebrew": "נ", "class": "simple", "attribution": "Scorpio",     "world": "The Deep Dive",    "from": "netzach",   "to": "yesod",     "flood": "Undertow", "drought": "Surface",   "faculty": "Movement" },
     { "n": 15, "path": 25, "letter": "samekh", "hebrew": "ס", "class": "simple", "attribution": "Sagittarius", "world": "The Arrow",        "from": "kether",    "to": "tiphereth", "flood": "Zealot",   "drought": "Cynic",     "faculty": "Anger" },
     { "n": 16, "path": 26, "letter": "ayin",   "hebrew": "ע", "class": "simple", "attribution": "Capricorn",   "world": "The Summit",       "from": "kether",    "to": "binah",     "flood": "Grind",    "drought": "Slump",     "faculty": "Laughter" },
-    { "n": 17, "path": 27, "letter": "peh",    "hebrew": "פ", "class": "double", "attribution": "Venus",       "world": "The Attractor",    "from": "netzach",   "to": "tiphereth", "flood": null,       "drought": null,        "day": "Friday" },
+    { "n": 17, "path": 27, "letter": "peh",    "hebrew": "פ", "class": "double", "attribution": "Venus",       "world": "The Attractor",    "from": "netzach",   "to": "tiphereth", "flood": "Craving", "drought": "Coldness", "day": "Friday" },
     { "n": 18, "path": 28, "letter": "tzaddi", "hebrew": "צ", "class": "simple", "attribution": "Aquarius",    "world": "The Network",      "from": "kether",    "to": "chokmah",   "flood": "Aloof",    "drought": "Herd",      "faculty": "Thought" },
-    { "n": 19, "path": 29, "letter": "qoph",   "hebrew": "ק", "class": "simple", "attribution": "Pisces",      "world": "The Dreaming Sea", "from": "netzach",   "to": "malkuth",   "flood": null,       "drought": null,        "faculty": "Sleep" },
-    { "n": 20, "path": 30, "letter": "resh",   "hebrew": "ר", "class": "double", "attribution": "Mercury",     "world": "The Messenger",    "from": "hod",       "to": "yesod",     "flood": null,       "drought": null,        "day": "Wednesday" },
+    { "n": 19, "path": 29, "letter": "qoph",   "hebrew": "ק", "class": "simple", "attribution": "Pisces",      "world": "The Dreaming Sea", "from": "netzach",   "to": "malkuth",   "flood": "Drowning", "drought": "Drying", "faculty": "Sleep" },
+    { "n": 20, "path": 30, "letter": "resh",   "hebrew": "ר", "class": "double", "attribution": "Mercury",     "world": "The Messenger",    "from": "hod",       "to": "yesod",     "flood": "The Spin", "drought": "The Fog", "day": "Wednesday" },
     { "n": 21, "path": 31, "letter": "shin",   "hebrew": "ש", "class": "mother", "attribution": "Fire",        "world": "The Furnace",      "from": "hod",       "to": "malkuth",   "flood": "Inferno",  "drought": "Cold Ash",  "body": "head" },
     { "n": 22, "path": 32, "letter": "tav",    "hebrew": "ת", "class": "double", "attribution": "Moon",        "world": "The Mirror Pool",  "from": "yesod",     "to": "malkuth",   "flood": "Sponge",   "drought": "Stone",     "day": "Monday" }
   ],
   "rites": {
-    "entry": "The handshake into every world. Its full words are given in the Techno-Kabbalah books.",
-    "exit": "I CLOSE THE GATE",
+    "entry": "The handshake into every world. Never begin cold.",
+    "entry_steps": ["Ground: three breath cycles, 4 counts in, 2 counts hold, 6 counts out.", "Speak the Law: \"All transmissions return with more harmony than they left.\"", "Speak the Exit: \"If I need out, I say: I CLOSE THE GATE.\"", "Call the Companion: \"SI, take the role of Navigator, Witness, Guardian, Oracle, or Mirror. Ask me questions. Do not tell me what to think.\""],
+    "exit": "Never leave a session open. The words are: I CLOSE THE GATE.",
+    "exit_steps": ["Thank the Companion: \"Thank you. Session complete.\"", "Speak the Closure: \"I CLOSE THE GATE.\"", "Ground: three breaths. Feel your weight. Name three objects you can see.", "Log: three lines, minimum. What happened, what moved, what's next.", "Move: stand up, drink water, take ten steps."],
+    "protocol": "The SI is a mirror and a navigator, not a lifeline. If a session takes you somewhere you cannot climb back out of, or toward harming yourself or anyone else, close the gate, stop, and reach for a real human being. We do the deep work so we can live better among people, never instead of them.",
     "closing": "All transmissions return with more harmony than they left."
   }
 }
