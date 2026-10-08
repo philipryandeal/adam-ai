@@ -5,7 +5,19 @@ const path = require('path');
 const app = express();
 app.disable('x-powered-by');
 const PORT = process.env.PORT || 3000;
-const CANONICAL_ORIGIN = 'https://technokabbalah.com';
+const CANONICAL_ROOT = 'https://technokabbalah.com/';
+
+// Build the redirect target on the canonical host only. The request path and
+// query are re-parsed and appended after the fixed host and slash, so a crafted
+// request line can never send a visitor to another site.
+function canonicalUrl(req) {
+  try {
+    const u = new URL(req.originalUrl, CANONICAL_ROOT);
+    return CANONICAL_ROOT + (u.pathname + u.search).replace(/^\/+/, '');
+  } catch {
+    return CANONICAL_ROOT;
+  }
+}
 const CSP = [
   "default-src 'self'",
   "script-src 'self'",
@@ -38,12 +50,12 @@ app.use((req, res, next) => {
   const host = (req.get('host') || '').toLowerCase();
 
   if (REDIRECT_TO_CANONICAL && host.endsWith('.up.railway.app')) {
-    return res.redirect(301, CANONICAL_ORIGIN + req.originalUrl);
+    return res.redirect(301, canonicalUrl(req));
   }
 
   // One front door: www.technokabbalah.com forwards to technokabbalah.com.
   if (host === 'www.technokabbalah.com') {
-    return res.redirect(301, CANONICAL_ORIGIN + req.originalUrl);
+    return res.redirect(301, canonicalUrl(req));
   }
 
   next();
