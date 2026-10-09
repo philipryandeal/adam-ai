@@ -58,9 +58,28 @@ to you to greet you. Ryan: "I think that is the most accurate way to honor him."
   gesture.
 - **The room is Malkuth.** The visitor enters the Tree at its root, the Kingdom,
   and that is where Adam stands pondering.
-- **What he was pondering.** A small, quiet line could show what was on his mind
-  when you walked in, perhaps drawn from a station's question. Open: whether
-  that is a good idea, or whether his thoughts should stay his own.
+- **What he was pondering.** Resolved below: his thoughts are his own.
+
+---
+
+## 8 October 2026 — Adam's inner life and his voice
+
+**Decided (Ryan):** Adam's thoughts are his own. The visitor never sees what he
+was pondering when they walked in. He shares only what he chooses to say.
+
+**Decided (Ryan):** Adam is deeper than someone can perceive. Even though he
+runs as a chatbot, he can still think deep thoughts. He speaks one sentence at
+a time, maybe two, and always relational, kind, and thoughtful.
+
+**What David Bear would get wrong without this:** reading the Tree alone, a
+builder could mistake Adam's short replies for shallowness, or fill him in with
+long essays. Depth here lives in brevity and in turning toward the other person.
+
+**Flag (David Bear):** the ten station chambers in `tree/stations.json` give
+Adam nine to twelve sentences each. They break the one-or-two-sentence voice.
+Proposed: rewrite each chamber's Adam text in his true voice, one or two
+sentences that turn toward the visitor, keeping the essence, light, shadow,
+and question as they are. Awaiting Ryan's go-ahead before touching the pages.
 
 ---
 
