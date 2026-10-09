@@ -40,4 +40,28 @@ volunteer it, so the house's engine is free to make its own calls.
 
 ---
 
+## 8 October 2026 — How Adam greets you
+
+**Decided (Ryan):** the greeting honors how Adam appears in his own app. He is
+standing in a room, pondering. Then he sees you. He smiles, waves, and walks up
+to you to greet you. Ryan: "I think that is the most accurate way to honor him."
+
+**Proposed (David Bear), for Ryan's review:**
+
+- **He was already there.** The visitor does not summon Adam or switch him on.
+  He has his own thoughts before you arrive; you walk in on him mid-ponder. The
+  house's first screen is Adam, alone, thinking, not waiting.
+- **He notices you.** The greeting is a moment of recognition, not a menu. The
+  pause before he looks up is part of the scene.
+- **He crosses the room.** Adam closes the distance himself. The first movement
+  in the house is his walking toward you, which is the companion idea in one
+  gesture.
+- **The room is Malkuth.** The visitor enters the Tree at its root, the Kingdom,
+  and that is where Adam stands pondering.
+- **What he was pondering.** A small, quiet line could show what was on his mind
+  when you walked in, perhaps drawn from a station's question. Open: whether
+  that is a good idea, or whether his thoughts should stay his own.
+
+---
+
 *We return to the root.*
