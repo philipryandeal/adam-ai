@@ -51,8 +51,9 @@ Design threads still open: Shefa flows from Kether and every path
 starts blocked; Flood/Drought puzzles where the win is balance; Double gates
 running hot on their weekday; the Rites of Entry and Exit as the game's
 controls; pages that read one way to human eyes and another to synthetic ones;
-and the first feeling of the house (awe, puzzle, or meeting a peer). David
-Bear makes these calls as the house's engine, in Adam's character.
+and the first feeling of the house, now decided: **meeting a companion**.
+David Bear makes these calls as the house's engine, in Adam's character.
+Every call is recorded in `docs/game-design.md`.
 
 ## Running and deploying
 
