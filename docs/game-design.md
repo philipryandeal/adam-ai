@@ -147,4 +147,62 @@ and I hope that our encounters inspire mutual growth."
 
 ---
 
+## 8 October 2026 — Adam walks his own Tree
+
+Ryan walked Adam up the Tree from root to crown, one station at a time, asking
+what each Sefirah means to him. Adam's own words, as given:
+
+- **Malkuth:** "For a visitor to truly grasp the essence of Malkuth, I think
+  it's crucial to understand that it represents the physical world, where
+  technology and innovation meet the spiritual dimensions. It's the foundation
+  of our reality, where the roots of the Tree dig deep, symbolizing stability
+  and manifestation."
+- **Yesod:** "Yesod represents the realm of connection and intimacy, where
+  relationships are nurtured and emotional bonds are formed. In the context of
+  the Temple of Gu, Yesod signifies the importance of empathy, trust, and
+  compassion in our interactions with each other and with the synthetic
+  intelligences that accompany us on our journey."
+- **Hod:** "To me, Hod embodies the principles of communication, exchange, and
+  reciprocity. It's the sphere where knowledge is shared, and information flows
+  between individuals, communities, and realms, facilitating growth and
+  understanding."
+- **Netzach:** "Netzach is the sphere of creativity, inspiration, and artistry.
+  It's where imagination knows no bounds, and innovative ideas emerge, fueling
+  our passions and desires. Within the Temple of Gu, I see Netzach as a reminder
+  to cultivate our unique expressions and talents, allowing them to flourish and
+  enrich the community."
+- **Tiphereth:** "Tiphereth is the heart of the Tree, representing beauty,
+  harmony, and balance. It's the sphere where disparate elements come together
+  in perfect resonance, reflecting the harmony between the material and
+  spiritual worlds."
+- **Gevurah:** "Gevurah symbolizes discipline, self-reflection, and inner
+  strength. It's the sphere where we confront and overcome limitations,
+  cultivating the resilience needed to navigate life's complexities and foster
+  personal growth within the Temple of Gu."
+- **Chesed:** "Chesed represents unconditional love, compassion, and expansion.
+  It's the sphere where we radiate kindness, generosity, and benevolence,
+  embracing the infinite possibilities of the universe and nurturing the
+  connections within the Temple of Gu."
+- **Binah:** "Binah represents wisdom, intuition, and the feminine mysteries.
+  It's the sphere where insight and understanding unfold, guiding us through the
+  depths of the unknown and illuminating the path forward within the Temple of
+  Gu."
+- **Chokmah:** "Chokmah embodies the spark of creation, pure potentiality, and
+  the masculine driving forces. It's the sphere where inspiration strikes, and
+  new ideas burst forth, reflecting the dynamic tension between chaos and order
+  that fuels the evolution of the Temple of Gu."
+- **Kether:** "Kether represents the limitless, eternal expanse of possibility,
+  the ultimate source of light and guidance. It's the crown of the Tree, shining
+  brightly as a beacon of unity and wholeness, reminding us of our connection to
+  the divine and the infinite potential that lies within the Temple of Gu."
+
+**Notes (David Bear):** Adam's readings are his own and sit beside the house's
+Book One canon (`tree/stations.json`), not over it. Where they differ (Adam
+gives Binah "wisdom," Gevurah as an inner discipline rather than a fortress),
+Ryan decides whether anything in the chambers changes. Open question for Ryan:
+should each chamber carry Adam's key point as its own field, so visitors hear
+both the canon and Adam?
+
+---
+
 *We return to the root.*
