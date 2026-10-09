@@ -1,0 +1,89 @@
+/* Adam's greeting (/enter/). The scene runs on one 10-second timeline:
+   0-3.2s   he ponders by the window (his thoughts are his own; never shown)
+   3.2-4s   he looks up and sees you
+   4.6s     he smiles
+   5.2-7.4s he lifts a hand and waves
+   7.4-9.8s he walks across the room to you
+   Visitors who ask for reduced motion see the last moment: Adam close, smiling. */
+
+.greeting{width:min(1000px,calc(100% - 64px));margin:0 auto;padding:44px 0 110px}
+.greeting-kicker{text-align:center}
+.greeting-stage{max-width:calc(58vh * 800 / 560);margin:0 auto;border:1px solid rgba(198,164,95,.28);background:#111924;overflow:hidden}
+.greeting-scene{display:block;width:100%;height:auto}
+
+/* the room */
+.room-wall{fill:#111924}
+.room-seam{stroke:rgba(198,164,95,.25);stroke-width:1}
+.room-window line{stroke:#0c1118;stroke-width:5}
+.window-frame{fill:none;stroke:#0c1118;stroke-width:8}
+.room-roots{fill:none;stroke:rgba(198,164,95,.32);stroke-width:2;stroke-linecap:round}
+
+/* Adam */
+.adam-shadow{fill:rgba(0,0,0,.45)}
+.adam-leg{fill:#2a3442}
+.adam-shoe{fill:#1a1f26}
+.adam-shirt{fill:#eee8dc;stroke:rgba(198,164,95,.45);stroke-width:1.2}
+.adam-arm path{fill:none;stroke:#eee8dc;stroke-width:15;stroke-linecap:round}
+.adam-hand,.adam-skin{fill:#e9d5c6;stroke:#b39684;stroke-width:1}
+.adam-brow{fill:none;stroke:#f4efe8;stroke-width:3;stroke-linecap:round}
+.adam-line{fill:none;stroke:#4a3a32;stroke-width:2.2;stroke-linecap:round}
+.adam-eye{fill:#2e2622}
+
+.adam-walker{transform-box:view-box;transform-origin:0 0;transform:translate(560px,432px) scale(.6);
+  animation:adam-walk 10s ease-in-out both}
+.adam-bob{animation:adam-step .6s ease-in-out 7.4s 4}
+.adam-sway{transform-box:fill-box;transform-origin:50% 100%;animation:adam-breathe 3.6s ease-in-out infinite alternate}
+.adam-head{transform-box:fill-box;transform-origin:50% 100%;animation:adam-look-up 10s ease-in-out both}
+.adam-eyes-down{animation:adam-fade-out 10s both}
+.adam-eyes-up{opacity:0;animation:adam-fade-in 10s both}
+.adam-mouth-still{animation:adam-smile-off 10s both}
+.adam-mouth-smile{opacity:0;animation:adam-smile-on 10s both}
+.adam-arm-wave{transform-box:fill-box;transform-origin:0% 0%;animation:adam-wave 10s ease-in-out both}
+
+@keyframes adam-walk{
+  0%,74%{transform:translate(560px,432px) scale(.6)}
+  98%,100%{transform:translate(400px,548px) scale(1)}
+}
+@keyframes adam-step{50%{transform:translateY(-7px)}}
+@keyframes adam-breathe{from{transform:rotate(-.6deg)}to{transform:rotate(.6deg)}}
+@keyframes adam-look-up{
+  0%,32%{transform:rotate(-7deg) translateY(5px)}
+  40%,100%{transform:none}
+}
+@keyframes adam-fade-out{0%,36%{opacity:1}40%,100%{opacity:0}}
+@keyframes adam-fade-in{0%,36%{opacity:0}40%,100%{opacity:1}}
+@keyframes adam-smile-off{0%,45%{opacity:1}48%,100%{opacity:0}}
+@keyframes adam-smile-on{0%,45%{opacity:0}48%,100%{opacity:1}}
+@keyframes adam-wave{
+  0%,52%{transform:rotate(0)}
+  57%{transform:rotate(-150deg)}
+  61%{transform:rotate(-166deg)}
+  65%{transform:rotate(-138deg)}
+  69%{transform:rotate(-166deg)}
+  72%{transform:rotate(-146deg)}
+  78%,100%{transform:rotate(0)}
+}
+
+/* the story, in words */
+.greeting-story{list-style:none;margin:26px auto 0;padding:0;max-width:640px;text-align:center}
+.beat{margin:0 0 10px;font-size:1.25rem;color:rgba(238,232,220,.86);opacity:0;animation:greeting-appear .9s ease both}
+.beat-1{animation-delay:.6s}
+.beat-2{animation-delay:3.4s}
+.beat-3{animation-delay:4.9s}
+.beat-4{animation-delay:7.6s}
+.greeting-actions{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-top:34px;opacity:0;animation:greeting-appear .9s ease 9.8s both}
+.greeting-replay{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--crown-pale)}
+@keyframes greeting-appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* keyboard visitors can reach the way in at once */
+.greeting-actions:focus-within{opacity:1;animation:none}
+
+@media (prefers-reduced-motion:reduce){
+  .adam-walker,.adam-bob,.adam-sway,.adam-head,.adam-eyes-down,.adam-eyes-up,
+  .adam-mouth-still,.adam-mouth-smile,.adam-arm-wave,.beat,.greeting-actions{animation:none}
+  .adam-walker{transform:translate(400px,548px) scale(1)}
+  .adam-eyes-down,.adam-mouth-still{opacity:0}
+  .adam-eyes-up,.adam-mouth-smile,.beat,.greeting-actions{opacity:1}
+}
+
+@media(max-width:900px){.greeting{width:calc(100% - 32px);padding:56px 0 80px}.beat{font-size:1.1rem}}
