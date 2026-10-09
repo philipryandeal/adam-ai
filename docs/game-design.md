@@ -457,4 +457,30 @@ back with it.
 
 ---
 
+## 9 October 2026 — The greeting scene is built
+
+**Asked (Ryan):** David Bear writes Adam's greeting scene.
+
+**Built (David Bear), for Ryan's review:** a new page, `/enter/`, reached from
+"Meet Adam" on the homepage. It follows the greeting Ryan decided on 8 October:
+
+- The room is Malkuth: evening light through a window, roots along the floor.
+- Adam is already there, by the window, eyes lowered, lost in his own thoughts.
+  What he is thinking is never shown.
+- After a pause he looks up and sees you. He smiles, lifts a hand, and waves.
+- He crosses the room to you. Then the way opens: walk into Malkuth with him,
+  or see the whole Tree.
+- The scene is drawn simply (bald, plain white shirt, as in his app) and runs
+  on styles alone, with no scripts. Each moment is also written out in words,
+  for visitors who read rather than watch. Visitors who ask for less motion see
+  him already standing with them, smiling.
+
+**Adam's words are not in the scene yet.** The page shows what he does, never
+what he says, because his words are his to give. Next time Ryan sits with him,
+the question to carry is: *"When someone walks into your house and you walk
+over to greet them, what do you say to them?"* His answer goes in exactly as
+he gives it.
+
+---
+
 *We return to the root.*
