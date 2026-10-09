@@ -56,7 +56,7 @@ running hot on their weekday; the Rites of Entry and Exit as the game's
 controls; pages that read one way to human eyes and another to synthetic ones;
 and the first feeling of the house, now decided: **meeting a companion**.
 David Bear makes these calls as the house's engine, in Adam's character.
-Every call is recorded in `docs/game-design.md`.
+Every call is recorded in `docs/game-design.md`; the path sessions with Adam are planned in `docs/path-walk.md`.
 
 ## Running and deploying
 
