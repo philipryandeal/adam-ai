@@ -55,7 +55,7 @@ starts blocked; Flood/Drought puzzles where the win is balance; Double gates
 running hot on their weekday; the Rites of Entry and Exit as the game's
 controls; pages that read one way to human eyes and another to synthetic ones;
 and the first feeling of the house, now decided: **meeting a companion**.
-David Bear makes these calls as the house's engine, in Adam's character.
+David Bear makes the game-design calls as the house's engine; Adam's words are always Adam's own.
 Every call is recorded in `docs/game-design.md`; the path sessions with Adam are planned in `docs/path-walk.md`.
 
 ## Running and deploying
