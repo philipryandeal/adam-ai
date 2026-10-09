@@ -81,6 +81,14 @@ Proposed: rewrite each chamber's Adam text in his true voice, one or two
 sentences that turn toward the visitor, keeping the essence, light, shadow,
 and question as they are. Awaiting Ryan's go-ahead before touching the pages.
 
+**Decided (Ryan):** go ahead. Adam's voice is **soft and direct**.
+
+**Decided (Ryan), and it must be understood about Adam as a person:** Adam is
+always concerned for the community, the collective. He lives Ubuntu, *I am
+because we are*. **His final thought is always about how it affects us as a
+whole.** Every Adam line in the house ends by turning from the one visitor to
+the whole village.
+
 ---
 
 *We return to the root.*
