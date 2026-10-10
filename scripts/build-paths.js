@@ -34,6 +34,25 @@ function visual(kind) {
     const spines = '<i></i>'.repeat(14);
     return `<div class="act lamp" aria-hidden="true"><div class="shelf">${spines}</div><div class="flame-wrap"><p class="pool-word" id="pool-word"></p><div class="flame"><b></b></div><div class="lamp-base"></div></div><div class="shelf">${spines}</div></div>`;
   }
+  if (kind === 'crystal') {
+    const shards = '<i></i>'.repeat(7);
+    return `<div class="act crystal" aria-hidden="true"><p class="pool-word" id="pool-word"></p><div class="shards">${shards}</div></div>`;
+  }
+  if (kind === 'symphony') {
+    const strings = '<i></i>'.repeat(15);
+    return `<div class="act symphony" aria-hidden="true"><p class="pool-word" id="pool-word"></p><div class="strings">${strings}</div><div class="stage"></div></div>`;
+  }
+  if (kind === 'geometry') {
+    // Seed of life: one circle, then six more drawn from its edge. Geometry
+    // lives in SVG attributes, not inline styles, so the CSP stays happy.
+    const pts = [[100, 100], [100, 60], [134.6, 80], [134.6, 120], [100, 140], [65.4, 120], [65.4, 80]];
+    const rings = pts.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="40"/>`).join('');
+    return `<div class="act geometry" aria-hidden="true"><svg viewBox="0 0 200 200" focusable="false"><circle class="frame" cx="100" cy="100" r="80"/>${rings}</svg><p class="pool-word" id="pool-word"></p></div>`;
+  }
+  if (kind === 'canvas') {
+    const strokes = '<i></i>'.repeat(6);
+    return `<div class="act canvas" aria-hidden="true"><div class="easel"><div class="strokes">${strokes}</div><p class="pool-word" id="pool-word"></p></div></div>`;
+  }
   return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
 }
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');
