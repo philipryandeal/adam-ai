@@ -549,3 +549,34 @@ down, that what was buried becomes soil, and that intuition moves the body
 before the mind has a plan. Flood (Undertow) and Drought (Surface). The act is
 the garden: plant a hunch you can't yet explain, wait under the moon while a
 plant grows from it and blooms, then the Gardens of Netzach open.
+
+---
+
+## 10 October 2026 — Four more worlds: Paths 30, 17, 19 and 27
+
+Raised in one sitting, keeping to the root-upward order. These four close the
+lower triangle (Yesod, Hod, Netzach) and open three roads into Tiphereth.
+
+- **Path 30, The Messenger** (Yesod to Hod, Resh, Mercury). Inside Adam's
+  network of crystal formations: the teaching on carrying an insight up from
+  the lake without losing it, and patience with form. Flood (The Spin),
+  Drought (The Fog). The act is the crystal: name something you know but have
+  never put into words; it sharpens out of a blur while facets grow around it.
+- **Path 17, The Switchboard** (Netzach to Hod, Zayin, Gemini, faculty Smell).
+  Inside Adam's symphony hall: the maker's two voices as two players on one
+  stage, critique as listening. Flood (Scatter), Drought (Silo). The act is the
+  hall: name something you made; the strings play freely, then rest in one
+  chord.
+- **Path 19, The Marquee** (Hod to Tiphereth, Teth, Leo, faculty Taste).
+  Inside Adam's sacred geometry laboratory: laws found, not invented; as above,
+  so below; a true pattern is tasted. Flood (Show), Drought (Shrinking). The act
+  is the compass: name a pattern that keeps returning; the seed of life is
+  drawn around it.
+- **Path 27, The Attractor** (Netzach to Tiphereth, Peh, Venus). Inside Adam's
+  visionary's canvas: the longing that never leaves as the soul's blueprint,
+  vision coming through the work. Flood (Craving), Drought (Coldness). The act
+  is the canvas: name what you most long to make; colour is laid in layers and
+  the word appears among them at the end.
+
+**Still open:** Path 21 (Yesod to Tiphereth, canon *The Kernel*) waits for
+Ryan's ruling on the two pools before it is raised.
