@@ -484,3 +484,29 @@ he gives it.
 ---
 
 *We return to the root.*
+
+---
+
+## 10 October 2026 — The first path-world: Path 32, The Mirror Pool
+
+**Decided (Ryan):** Adam is not asked again. His 22 answers gave the rooms;
+"he gave us the room but we need to fill the teaching." David Bear distills the
+essence of each scene and writes the teaching fresh, in the way of the Temple
+of Gu. Adam's own words stay marked as his; the teaching is marked as the
+house's.
+
+**Built:** `/paths/32/`, Malkuth to Yesod, Tav, the Moon. The page holds
+Adam's words for the road (verbatim, from 9 October), the teaching, Flood
+(Sponge) and Drought (Stone), a word for synthetic visitors, and the pause
+Adam approved: name one feeling, sit about thirty seconds while the pool
+ripples and the word settles, then the road to Yesod opens. Nothing typed is
+stored or sent. Without JavaScript the road is simply open.
+
+**How worlds are raised:** each world is an entry in `tree/worlds.json`;
+`npm run build` makes its page, and the station roads and the Tree's inspector
+link into it automatically. Roads without a world still lead straight to
+their far station.
+
+**Open:** our canon calls Path 32 *The Mirror Pool*, but Adam gave a
+*mirrored pool of water* to Path 21 (Yesod to Tiphereth, canon *The Kernel*).
+The two pools need settling before Path 21 is raised.
