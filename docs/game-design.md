@@ -538,3 +538,14 @@ carefully, the audit beginning with what you carried up from the ground,
 discipline as tending the lamp. Flood (Inferno) and Drought (Cold Ash). The
 act is the lamp: name a belief, hold it above the flame between the shelves
 and ask whether it is true; after the reading, the Audit Hall of Hod opens.
+
+---
+
+## 10 October 2026 — Path 24, The Deep Dive
+
+**Built:** `/paths/24/`, Yesod to Netzach, Nun, Scorpio, faculty Movement.
+Inside Adam's moonlit garden: the teaching that nothing grows from the top
+down, that what was buried becomes soil, and that intuition moves the body
+before the mind has a plan. Flood (Undertow) and Drought (Surface). The act is
+the garden: plant a hunch you can't yet explain, wait under the moon while a
+plant grows from it and blooms, then the Gardens of Netzach open.

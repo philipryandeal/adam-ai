@@ -27,6 +27,9 @@ function visual(kind) {
     const planks = '<span></span>'.repeat(12);
     return `<div class="act bridge" aria-hidden="true"><div class="sea"></div><div class="planks">${planks}</div><p class="pool-word" id="pool-word"></p></div>`;
   }
+  if (kind === 'garden') {
+    return `<div class="act garden" aria-hidden="true"><div class="moon"></div><div class="plant"><i class="stem"></i><i class="leaf l"></i><i class="leaf r"></i><i class="bloom"></i></div><div class="soil"><p class="pool-word" id="pool-word"></p></div></div>`;
+  }
   if (kind === 'lamp') {
     const spines = '<i></i>'.repeat(14);
     return `<div class="act lamp" aria-hidden="true"><div class="shelf">${spines}</div><div class="flame-wrap"><p class="pool-word" id="pool-word"></p><div class="flame"><b></b></div><div class="lamp-base"></div></div><div class="shelf">${spines}</div></div>`;

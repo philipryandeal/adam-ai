@@ -81,4 +81,29 @@
 @keyframes read{0%{text-shadow:0 0 0 rgba(232,176,90,0)}50%{text-shadow:0 0 14px rgba(232,176,90,.8)}100%{text-shadow:0 0 4px rgba(223,199,143,.4);color:var(--crown-pale)}}
 @media(max-width:600px){.lamp{grid-template-columns:1fr;height:auto}.lamp .shelf{display:none}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .flame b,.pause.is-sitting .lamp .pool-word{animation:none}}
+/* The garden: under a moon, the named thing is planted in the soil and a
+   plant grows from it while the visitor waits. */
+.garden{position:relative;width:min(560px,100%);height:280px;margin:30px auto 0}
+.garden .moon{position:absolute;top:6px;right:12%;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 38% 38%,#f4efe2,#cfd8dc 60%,#9fb0b8);box-shadow:0 0 40px rgba(220,230,235,.25);opacity:.45;transition:opacity 3s}
+.garden .soil{position:absolute;left:0;right:0;bottom:0;height:70px;border-top:1px solid rgba(198,164,95,.45);background:linear-gradient(180deg,rgba(80,62,40,.35),rgba(20,16,12,.2));display:grid;place-items:center}
+.garden .pool-word{font-size:1.05rem;color:rgba(223,199,143,.75);max-width:90%}
+.plant{position:absolute;left:50%;bottom:70px;width:0;height:170px}
+.stem{position:absolute;left:-1px;bottom:0;width:2px;height:0;background:linear-gradient(0deg,#6f8a5a,#9cbf7e)}
+.leaf{position:absolute;width:30px;height:12px;border-radius:0 100% 0 100%;background:#86a86c;opacity:0}
+.leaf.l{bottom:58px;right:1px;border-radius:100% 0 100% 0;transform:rotate(20deg);transform-origin:right center}
+.leaf.r{bottom:96px;left:1px;transform:rotate(-20deg);transform-origin:left center}
+.bloom{position:absolute;left:-13px;bottom:160px;width:26px;height:26px;border-radius:50%;background:radial-gradient(circle,#fff6d8 0 22%,#e8d3f0 40%,rgba(200,170,230,.6) 70%,transparent);box-shadow:0 0 24px rgba(230,215,245,.45);opacity:0;transform:scale(.2)}
+.pause.is-sitting .garden .moon,.pause.is-still .garden .moon{opacity:1}
+.pause.is-sitting .garden .pool-word{opacity:1;animation:sink var(--sit,30s) ease-in forwards}
+.pause.is-sitting .stem{animation:grow var(--sit,30s) ease-out forwards}
+.pause.is-sitting .leaf.l{animation:leafl var(--sit,30s) linear forwards}
+.pause.is-sitting .leaf.r{animation:leafr var(--sit,30s) linear forwards}
+.pause.is-sitting .bloom{animation:bloom var(--sit,30s) ease-out forwards}
+.pause.is-still .stem{height:165px}.pause.is-still .leaf{opacity:1}.pause.is-still .bloom{opacity:1;transform:scale(1)}.pause.is-still .garden .pool-word{opacity:.35}
+@keyframes grow{0%{height:0}10%{height:0}100%{height:165px}}
+@keyframes sink{0%{opacity:1}60%{opacity:.5}100%{opacity:.35}}
+@keyframes leafl{0%,38%{opacity:0}48%,100%{opacity:1}}
+@keyframes leafr{0%,58%{opacity:0}68%,100%{opacity:1}}
+@keyframes bloom{0%,86%{opacity:0;transform:scale(.2)}100%{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .stem,.pause.is-sitting .leaf,.pause.is-sitting .bloom,.pause.is-sitting .garden .pool-word{animation:none}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .pool span{animation:none;opacity:.4}.pause.is-sitting .pool-word{animation:none;opacity:.6}.world-door{transition:none}}
