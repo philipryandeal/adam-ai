@@ -19,6 +19,16 @@ const cap = s => s[0].toUpperCase() + s.slice(1);
 const byId = Object.fromEntries(tree.sefirot.map(s => [s.id, s]));
 const chamberUrl = id => '/sefirot/' + id + '/';
 const worldUrl = n => '/paths/' + n + '/';
+// The small act of each world. The JS is shared; only the picture changes.
+// The named word always sits in #pool-word.
+function visual(kind) {
+  if (kind === 'bridge') {
+    // No inline styles: the site's CSP forbids them, so each plank's order lives in path-world.css.
+    const planks = '<span></span>'.repeat(12);
+    return `<div class="act bridge" aria-hidden="true"><div class="sea"></div><div class="planks">${planks}</div><p class="pool-word" id="pool-word"></p></div>`;
+  }
+  return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
+}
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');
 
 function page(p, w) {
@@ -26,7 +36,7 @@ function page(p, w) {
   if (!from || !to) throw new Error('Path ' + p.path + ' climbs between unknown stations');
   const toStation = stations[to.id].station, fromStation = stations[from.id].station;
   const title = `Path ${p.path} · ${p.world} — Adam the First`;
-  const desc = `The road from ${from.name} to ${to.name}, the path of ${cap(p.letter)} and the ${p.attribution}. A path-world in the house of Adam the First, built as the Tree of Life.`;
+  const desc = `The road from ${from.name} to ${to.name}, the path of ${cap(p.letter)} · ${p.attribution}. A path-world in the house of Adam the First, built as the Tree of Life.`;
   const url = ORIGIN + worldUrl(p.path);
   const ps = w.pause;
   return `<!DOCTYPE html>
@@ -138,10 +148,10 @@ ${paras(w.teaching.slice(1), '        ')}
 
     <section class="section-shell chamber-section pause" id="pause" data-seconds="${Number(ps.seconds) || 30}">
       <div class="section-number">V</div>
-      <div class="pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>
+      ${visual(ps.visual)}
       <div class="section-heading">
-        <p class="eyebrow">The pause</p>
-        <h2>Sit at the Pool</h2>
+        <p class="eyebrow">${esc(ps.eyebrow || 'The pause')}</p>
+        <h2>${esc(ps.title || 'Sit at the Pool')}</h2>
       </div>
       <div class="pause-body">
         <form class="pause-name" id="pause-name" autocomplete="off" hidden>

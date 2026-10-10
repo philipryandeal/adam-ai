@@ -13,7 +13,8 @@
 .pause{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.6fr);gap:30px 80px;align-items:center}
 .pause .section-heading{grid-column:1;grid-row:1}
 .pause-body{grid-column:2;grid-row:1;max-width:620px}
-.pool{grid-column:1/-1;grid-row:2;position:relative;width:min(360px,80vw);aspect-ratio:1;margin:30px auto 0;border-radius:50%;background:radial-gradient(circle at 50% 42%,rgba(127,165,184,.2),rgba(127,165,184,.05) 55%,transparent 70%);display:grid;place-items:center}
+.act{grid-column:1/-1;grid-row:2}
+.pool{position:relative;width:min(360px,80vw);aspect-ratio:1;margin:30px auto 0;border-radius:50%;background:radial-gradient(circle at 50% 42%,rgba(127,165,184,.2),rgba(127,165,184,.05) 55%,transparent 70%);display:grid;place-items:center}
 .pool span{position:absolute;inset:18%;border:1px solid rgba(127,165,184,.38);border-radius:50%;opacity:0}
 .pool-word{position:relative;margin:0;max-width:70%;text-align:center;font-family:"Cinzel",serif;font-size:1.5rem;letter-spacing:.06em;color:var(--paper);opacity:0}
 .pause-name{display:grid;gap:12px}
@@ -30,7 +31,7 @@
 .pause.is-sitting .pool span{animation:ripple 6s ease-out infinite}
 .pause.is-sitting .pool span:nth-child(2){animation-delay:2s}
 .pause.is-sitting .pool span:nth-child(3){animation-delay:4s}
-.pause.is-sitting .pool-word{animation:settle var(--sit,30s) ease-in forwards}
+.pause.is-sitting .pool .pool-word{animation:settle var(--sit,30s) ease-in forwards}
 .pause.is-still .pool{box-shadow:0 0 60px rgba(223,199,143,.12) inset;transition:box-shadow 2s}
 @keyframes ripple{0%{transform:scale(.4);opacity:.7}100%{transform:scale(1.5);opacity:0}}
 @keyframes settle{0%{opacity:.95;filter:blur(0)}100%{opacity:0;filter:blur(6px)}}
@@ -39,5 +40,25 @@
 .world-door.is-sealed{opacity:.35;cursor:default;pointer-events:none}
 .world-door{transition:opacity 1.5s}
 
-@media(max-width:900px){.pause{grid-template-columns:1fr}.pause .section-heading,.pause-body{grid-column:1}.pause-body{grid-row:2}.pool{grid-row:3}}
+@media(max-width:900px){.pause{grid-template-columns:1fr}.pause .section-heading,.pause-body{grid-column:1}.pause-body{grid-row:2}.act{grid-row:3}}
+/* The bridge: planks laid one by one across the dreaming sea while the named
+   thing is carried from the near shore to the far one. */
+.bridge{position:relative;width:min(760px,100%);height:200px;margin:30px auto 0}
+.bridge .sea{position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(180deg,rgba(127,165,184,.16),rgba(127,165,184,.03));border-top:1px solid rgba(127,165,184,.3);overflow:hidden}
+.bridge .sea:before,.bridge .sea:after{content:"";position:absolute;left:-50%;width:200%;height:1px;background:repeating-linear-gradient(90deg,rgba(127,165,184,.45) 0 40px,transparent 40px 90px)}
+.bridge .sea:before{top:34px}.bridge .sea:after{top:70px;opacity:.6}
+.pause.is-sitting .bridge .sea:before{animation:drift 9s linear infinite}
+.pause.is-sitting .bridge .sea:after{animation:drift 13s linear infinite reverse}
+@keyframes drift{to{transform:translateX(25%)}}
+.planks{position:absolute;left:4%;right:4%;bottom:110px;height:12px;display:grid;grid-template-columns:repeat(12,1fr);gap:4px}
+.planks span{background:var(--crown);opacity:.12;border-radius:1px}
+.planks span:nth-child(1){--i:0}.planks span:nth-child(2){--i:1}.planks span:nth-child(3){--i:2}.planks span:nth-child(4){--i:3}.planks span:nth-child(5){--i:4}.planks span:nth-child(6){--i:5}.planks span:nth-child(7){--i:6}.planks span:nth-child(8){--i:7}.planks span:nth-child(9){--i:8}.planks span:nth-child(10){--i:9}.planks span:nth-child(11){--i:10}.planks span:nth-child(12){--i:11}
+.bridge .pool-word{position:absolute;left:4%;bottom:132px;max-width:none;white-space:nowrap;transform:translateX(0)}
+.pause.is-sitting .planks span{animation:plank .9s ease-out forwards;animation-delay:calc(var(--sit,30s) * var(--i) / 12)}
+.pause.is-sitting .bridge .pool-word{opacity:.95;animation:cross var(--sit,30s) linear forwards}
+.pause.is-still .planks span{opacity:.85}
+.pause.is-still .bridge .pool-word{opacity:.95;left:auto;right:4%;color:var(--crown-pale)}
+@keyframes plank{to{opacity:.85}}
+@keyframes cross{from{left:4%;transform:translateX(0)}to{left:96%;transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .planks span{animation:none;opacity:.85}.pause.is-sitting .bridge .pool-word{animation:none}.pause.is-sitting .bridge .sea:before,.pause.is-sitting .bridge .sea:after{animation:none}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .pool span{animation:none;opacity:.4}.pause.is-sitting .pool-word{animation:none;opacity:.6}.world-door{transition:none}}
