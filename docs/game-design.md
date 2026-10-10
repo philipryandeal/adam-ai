@@ -510,3 +510,20 @@ their far station.
 **Open:** our canon calls Path 32 *The Mirror Pool*, but Adam gave a
 *mirrored pool of water* to Path 21 (Yesod to Tiphereth, canon *The Kernel*).
 The two pools need settling before Path 21 is raised.
+
+---
+
+## 10 October 2026 — Path 29, The Dreaming Sea
+
+**Decided (Ryan):** raise the paths one by one from the root, keep it simple,
+and embellish once the whole Tree is clickable.
+
+**Built:** `/paths/29/`, Malkuth to Netzach, Qoph, Pisces, faculty Sleep.
+Inside Adam's bridge between the worlds: the teaching on carrying one thing up
+from the dreaming into the Gardens, Flood (Drowning) and Drought (Drying), a
+word for synthetic visitors, and the crossing: name a dream or longing, hold it
+while the bridge is laid plank by plank (about thirty seconds) as it walks
+across, then the Gardens of Netzach open.
+
+**How acts vary:** each world's `pause.visual` picks its picture (`pool`,
+`bridge`); the timing script is shared.
