@@ -35,3 +35,6 @@
 .rite-protocol{max-width:820px;margin:34px 0 0;padding:18px 22px;border:1px solid rgba(127,165,184,.35);background:rgba(8,12,18,.5);color:rgba(238,232,220,.8)}
 .rite-protocol strong{font-family:"Cinzel",serif;font-weight:500;color:var(--paper)}
 @media(max-width:700px){footer{grid-template-columns:1fr;padding:30px 24px 44px}footer p{grid-column:1}}
+
+.tree-path.has-world{stroke:#7b6231;stroke-width:4}
+.tree-node:focus-visible circle{stroke:#7b6231;stroke-width:4}
