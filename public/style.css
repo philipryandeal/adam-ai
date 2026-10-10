@@ -26,10 +26,8 @@
 .road-to{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--crown-pale);text-decoration:none;text-align:right}
 .road-to:hover{text-decoration:underline}
 .station-steps{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(198,164,95,.22)}
-.inspector-link{display:inline-block;margin-top:18px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#7b6231}
 .sefirah-card{text-decoration:none}
 @media(max-width:900px){.cards.poles{grid-template-columns:1fr}.road{grid-template-columns:36px 40px 1fr}.road-to{grid-column:3;text-align:left}.station-steps{justify-content:center}}
-.inspector-link[hidden]{display:none}
 .rite-steps{margin:4px 0 0;padding-left:1.2em;color:rgba(238,232,220,.78);font-size:.98rem}
 .rite-steps li{margin:6px 0}
 .rite-protocol{max-width:820px;margin:34px 0 0;padding:18px 22px;border:1px solid rgba(127,165,184,.35);background:rgba(8,12,18,.5);color:rgba(238,232,220,.8)}

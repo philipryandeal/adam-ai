@@ -10,7 +10,6 @@ const inspectorHebrew = $('#inspector-hebrew'), inspectorTitle = $('#inspector-t
 const inspectorCopy = $('#inspector-copy'), inspectorData = $('#inspector-data');
 const sefirotGrid = $('#sefirot-grid'), pathList = $('#path-list'), ritesGrid = $('#rites-grid');
 const canonSource = $('#canon-source'), closingLine = $('#closing-line');
-const inspectorLink = $('#inspector-link');
 
 let activePath = null, activeNode = null;
 
@@ -48,9 +47,6 @@ function inspectS(s) {
     ? 'Begin here. Malkuth is Kingdom: the grounded threshold from which ascent becomes possible.'
     : 'Station ' + s.n + ' on the ' + s.pillar + ' pillar.';
   dataRows([['Pillar', s.pillar], ['Station', String(s.n)], ['Meaning', s.meaning]]);
-  inspectorLink.href = '/sefirot/' + s.id + '/';
-  inspectorLink.textContent = 'Enter the chamber of ' + s.name + ' →';
-  inspectorLink.hidden = false;
   if (activePath) { activePath.classList.remove('is-active'); activePath = null; }
   if (activeNode) activeNode.classList.remove('is-active');
   activeNode = document.querySelector('[data-node-id="' + s.id + '"]');
@@ -63,13 +59,6 @@ function inspectP(p, names) {
   const poles = p.flood && p.drought ? ' Flood: ' + p.flood + ' · Drought: ' + p.drought + '.' : '';
   inspectorCopy.textContent = p.letter[0].toUpperCase() + p.letter.slice(1) + ' · ' + p.attribution + '.' + poles;
   dataRows([['Class', p.class[0].toUpperCase() + p.class.slice(1)], ['Current', names[p.from] + ' → ' + names[p.to]]]);
-  if (p.page) {
-    inspectorLink.href = p.page;
-    inspectorLink.textContent = 'Walk the road into ' + p.world + ' →';
-    inspectorLink.hidden = false;
-  } else {
-    inspectorLink.hidden = true;
-  }
   if (activeNode) { activeNode.classList.remove('is-active'); activeNode = null; }
   if (activePath) activePath.classList.remove('is-active');
   activePath = document.querySelector('[data-path-number="' + p.path + '"]');
