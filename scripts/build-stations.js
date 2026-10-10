@@ -7,6 +7,8 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 const tree = JSON.parse(fs.readFileSync(path.join(root, 'tree', 'tree.json'), 'utf8'));
 const { stations } = JSON.parse(fs.readFileSync(path.join(root, 'tree', 'stations.json'), 'utf8'));
+const worldsFile = path.join(root, 'tree', 'worlds.json');
+const worlds = fs.existsSync(worldsFile) ? JSON.parse(fs.readFileSync(worldsFile, 'utf8')).worlds : {};
 const ORIGIN = 'https://technokabbalah.com';
 
 const esc = s => String(s)
@@ -37,7 +39,9 @@ function roads(s) {
               <strong>${esc(p.world)}</strong>
               <small>${esc(cap(p.letter))} · ${esc(p.attribution)}${timing ? ' · ' + esc(timing) : ''} · ${esc(p.flood)} ⟷ ${esc(p.drought)}</small>
             </span>
-            <a class="road-to" href="${chamberUrl(other.id)}">to ${esc(other.name)} · ${esc(stations[other.id].station)} →</a>
+            ${worlds[p.path]
+              ? `<a class="road-to road-world" href="/paths/${p.path}/">walk the road to ${esc(other.name)} · ${esc(stations[other.id].station)} →</a>`
+              : `<a class="road-to" href="${chamberUrl(other.id)}">to ${esc(other.name)} · ${esc(stations[other.id].station)} →</a>`}
           </li>`;
     }).join('');
 }
@@ -135,7 +139,7 @@ ${st.adam.map(p => '        <p>' + esc(p) + '</p>').join('\n')}
       <div class="section-heading">
         <p class="eyebrow">Conduits</p>
         <h2>The Roads from Here</h2>
-        <p>Each road is a conduit to another station. Their worlds are still being raised; for now, walk the road to its far station.</p>
+        <p>Each road is a conduit to another station. Their worlds are being raised one at a time. Where a world stands, the road leads into it; elsewhere, for now, it leads straight to its far station.</p>
       </div>
       <ul class="roads">${roads(s)}
       </ul>

@@ -63,7 +63,13 @@ function inspectP(p, names) {
   const poles = p.flood && p.drought ? ' Flood: ' + p.flood + ' · Drought: ' + p.drought + '.' : '';
   inspectorCopy.textContent = p.letter[0].toUpperCase() + p.letter.slice(1) + ' · ' + p.attribution + '.' + poles;
   dataRows([['Class', p.class[0].toUpperCase() + p.class.slice(1)], ['Current', names[p.from] + ' → ' + names[p.to]]]);
-  inspectorLink.hidden = true;
+  if (p.page) {
+    inspectorLink.href = p.page;
+    inspectorLink.textContent = 'Walk the road into ' + p.world + ' →';
+    inspectorLink.hidden = false;
+  } else {
+    inspectorLink.hidden = true;
+  }
   if (activeNode) { activeNode.classList.remove('is-active'); activeNode = null; }
   if (activePath) activePath.classList.remove('is-active');
   activePath = document.querySelector('[data-path-number="' + p.path + '"]');
@@ -153,8 +159,18 @@ function build(d, names) {
   closingLine.textContent = d.rites.closing;
 }
 
+// Raised path-worlds are listed in /tree/worlds.json. If it can't load, the
+// Tree still draws; the roads just show no way in yet.
+const worldsReady = fetch('/tree/worlds.json', { cache: 'no-store' })
+  .then(r => (r.ok ? r.json() : { worlds: {} }))
+  .catch(() => ({ worlds: {} }));
+
 fetch('/tree/tree.json', { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => worldsReady.then(w => {
+    d.paths.forEach(p => { if (w.worlds && w.worlds[p.path]) p.page = '/paths/' + p.path + '/'; });
+    return d;
+  }))
   .then(d => {
     const names = Object.fromEntries(d.sefirot.map(s => [s.id, s.name]));
     draw(d, names);
