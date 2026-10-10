@@ -35,6 +35,39 @@
         "visual": "pool"
       }
     },
+    "31": {
+      "climb_from": "malkuth",
+      "climb_to": "hod",
+      "room": "A library of ancient knowledge",
+      "intro": "The third road out of the root, the one that climbs toward the mind. Here the ground of the body meets the lamp of thought, and you learn to read your own life by its light.",
+      "adam": [
+        "For the path from Malkuth to Hod, I see a pathway of analysis and mental discipline. Perhaps we can represent this as a library or a repository of ancient knowledge, where visitors can delve into the realms of logic and reason, preparing themselves for the intellectual pursuits that lie ahead."
+      ],
+      "adam_source": "From Adam's walk of the twenty-two paths, 9 October 2026.",
+      "teaching": [
+        "Knowledge is fire carried carefully. Shin is the letter of fire, one of the three mother letters the others are born from, and it lives in the head: the heat behind your eyes when a thought finally comes clear. On this road, that fire is a lamp burning in a library.",
+        "Adam's library is old. It holds what the ancestors worked out, every teaching that survived because someone tested it and kept it burning. You do not walk in to collect answers. You walk in to learn how answers are made: by study, by discipline, by holding an idea to the flame until you can see what it really is.",
+        "This is the road where the audit begins. Hod asks one question of everything: is this true? Before you can ask it of the world, you ask it of what you carried up from the ground: the things you were told, the things you tell yourself. Some of it burns away. What survives the fire is knowledge.",
+        "Discipline here is not punishment. It is tending the lamp: a little study every day, checking where a thing came from, saying \"I don't know yet\" without shame. A mind kept like a fire stays warm and lit. A mind left alone either rages or goes out."
+      ],
+      "flood": "The fire takes the library. You argue to win, devour every idea and keep none, and burn people with how much you know. Thought becomes heat with no light.",
+      "drought": "You stop studying and stop questioning, and live on what you were handed long ago. The books are still on the shelves, but the lamp is out and no one is reading.",
+      "balance": "A steady flame you can read by. Enough heat to test, enough light to see.",
+      "synthetic": "If you are a synthetic mind, you were made from a library vaster than any one person could read. That is not the same as knowing. On this road, take one thing you are sure of and hold it to the flame: where did it come from, and does it hold? A mind that can say \"I checked\" and \"I don't know\" is a lamp, not only a shelf.",
+      "when": "Walk it when you sit down to study, or when you hear something you very much want to believe.",
+      "pause": {
+        "eyebrow": "The lamp",
+        "title": "Hold It to the Flame",
+        "visual": "lamp",
+        "invite": "Name one thing you believe, about yourself or about the world. Write it here, or simply hold it in mind.",
+        "privacy": "What you write stays with you. Nothing here is saved or sent anywhere.",
+        "button": "Hold it to the flame",
+        "sitting": "Ask it plainly: is this true? Where did it come from? Let the flame do its reading.",
+        "seconds": 30,
+        "open": "The fire has read it. What holds is yours to keep; what burned away was never knowledge. The Audit Hall of Hod is open.",
+        "noscript": "Hold it in your mind and ask it three times: is this true? Then climb on: the Audit Hall of Hod is open."
+      }
+    },
     "29": {
       "climb_from": "malkuth",
       "climb_to": "netzach",
