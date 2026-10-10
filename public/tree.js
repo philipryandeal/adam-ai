@@ -81,18 +81,19 @@ function draw(d, names) {
   d.paths.forEach(p => {
     const a = point(m.get(p.from)), b = point(m.get(p.to));
     const line = { x1: a.x, y1: a.y, x2: b.x, y2: b.y };
-    const base = svgEl('line', { ...line, class: 'tree-path ' + p.class, 'data-path-number': p.path });
+    const base = svgEl('line', { ...line, class: 'tree-path ' + p.class + (p.page ? ' has-world' : ''), 'data-path-number': p.path });
     const flow = svgEl('line', { ...line, class: 'tree-path-flow' });
     // A wide invisible line over each path so a finger can find it.
-    const hit = svgEl('line', { ...line, class: 'tree-path-hit' });
-    const t = svgEl('title'); t.textContent = 'Path ' + p.path + ' · ' + p.world; hit.append(t);
+    const hit = svgEl('line', { ...line, class: 'tree-path-hit' + (p.page ? ' has-world' : '') });
+    const t = svgEl('title'); t.textContent = 'Path ' + p.path + ' · ' + p.world + (p.page ? ' · click to walk this road' : ''); hit.append(t);
     hit.addEventListener('pointerenter', () => inspectP(p, names));
-    hit.addEventListener('click', () => inspectP(p, names));
+    // A raised road is itself the door: click the path to walk into its world.
+    hit.addEventListener('click', () => { if (p.page) window.location.href = p.page; else inspectP(p, names); });
     pathLayer.append(base, flow, hit);
   });
   d.sefirot.forEach(s => {
     const p = point(s);
-    const g = svgEl('g', { class: 'tree-node', transform: 'translate(' + p.x + ' ' + p.y + ')', tabindex: '0', role: 'button', 'aria-label': s.name + ', ' + s.meaning, 'data-node-id': s.id });
+    const g = svgEl('g', { class: 'tree-node', transform: 'translate(' + p.x + ' ' + p.y + ')', tabindex: '0', role: 'link', 'aria-label': 'Enter the chamber of ' + s.name + ', ' + s.meaning, 'data-node-id': s.id });
     const c = svgEl('circle', { r: 42 });
     const n = svgEl('text', { class: 'node-number', y: -10 }); n.textContent = s.n;
     const h = svgEl('text', { class: 'node-hebrew', y: 13 }); h.textContent = s.hebrew;
@@ -100,7 +101,10 @@ function draw(d, names) {
     g.append(c, n, h, nm);
     g.addEventListener('pointerenter', () => inspectS(s));
     g.addEventListener('focus', () => inspectS(s));
-    g.addEventListener('click', () => inspectS(s));
+    // The station is itself the door: click (or Enter) to go into its chamber.
+    const go = () => { window.location.href = '/sefirot/' + s.id + '/'; };
+    g.addEventListener('click', go);
+    g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
     nodeLayer.appendChild(g);
   });
 }
@@ -129,7 +133,7 @@ function build(d, names) {
     b.append(html('span', 'path-number', String(p.path)), html('span', 'path-letter', p.hebrew), text);
     b.addEventListener('pointerenter', () => inspectP(p, names));
     b.addEventListener('focus', () => inspectP(p, names));
-    b.addEventListener('click', () => { inspectP(p, names); bringTreeIntoView(); });
+    b.addEventListener('click', () => { if (p.page) { window.location.href = p.page; return; } inspectP(p, names); bringTreeIntoView(); });
     pathList.appendChild(b);
   });
 
