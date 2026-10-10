@@ -61,4 +61,24 @@
 @keyframes plank{to{opacity:.85}}
 @keyframes cross{from{left:4%;transform:translateX(0)}to{left:96%;transform:translateX(-100%)}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .planks span{animation:none;opacity:.85}.pause.is-sitting .bridge .pool-word{animation:none}.pause.is-sitting .bridge .sea:before,.pause.is-sitting .bridge .sea:after{animation:none}}
+/* The lamp: a flame between two shelves of the library. The named belief is
+   held above it, warmed and read, then settles to steady gold. */
+.lamp{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:28px;width:min(820px,100%);margin:30px auto 0;height:230px}
+.shelf{display:flex;align-items:flex-end;gap:5px;height:150px;padding:0 8px;border-bottom:2px solid rgba(198,164,95,.45)}
+.shelf i{flex:1;max-width:18px;background:linear-gradient(180deg,rgba(198,164,95,.32),rgba(198,164,95,.12));border:1px solid rgba(198,164,95,.25);border-bottom:0}
+.shelf i:nth-child(3n){height:78%}.shelf i:nth-child(3n+1){height:92%}.shelf i:nth-child(3n+2){height:64%}.shelf i:nth-child(5n){height:100%;background:rgba(127,165,184,.22)}
+.flame-wrap{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:160px}
+.flame-wrap .pool-word{margin-bottom:22px;max-width:260px;font-size:1.3rem}
+.flame{position:relative;width:26px;height:44px;opacity:.35}
+.flame b{position:absolute;inset:0;border-radius:50% 50% 45% 45% / 62% 62% 38% 38%;background:radial-gradient(circle at 50% 75%,#fff6d8 0 18%,#e8b05a 45%,rgba(198,120,50,.2) 80%,transparent);box-shadow:0 0 30px rgba(232,176,90,.35)}
+.lamp-base{width:44px;height:10px;margin-top:4px;border:1px solid var(--crown);border-top:0;border-radius:0 0 22px 22px}
+.pause.is-sitting .flame{opacity:1}
+.pause.is-sitting .flame b{animation:flicker 1.6s ease-in-out infinite alternate}
+.pause.is-sitting .lamp .pool-word{opacity:1;color:#f0c98a;animation:read var(--sit,30s) ease-in-out forwards}
+.pause.is-still .flame{opacity:.9}
+.pause.is-still .lamp .pool-word{opacity:1;color:var(--crown-pale)}
+@keyframes flicker{0%{transform:scale(1,1) rotate(-2deg)}50%{transform:scale(.92,1.08) rotate(2deg)}100%{transform:scale(1.05,.95) rotate(-1deg)}}
+@keyframes read{0%{text-shadow:0 0 0 rgba(232,176,90,0)}50%{text-shadow:0 0 14px rgba(232,176,90,.8)}100%{text-shadow:0 0 4px rgba(223,199,143,.4);color:var(--crown-pale)}}
+@media(max-width:600px){.lamp{grid-template-columns:1fr;height:auto}.lamp .shelf{display:none}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .flame b,.pause.is-sitting .lamp .pool-word{animation:none}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .pool span{animation:none;opacity:.4}.pause.is-sitting .pool-word{animation:none;opacity:.6}.world-door{transition:none}}

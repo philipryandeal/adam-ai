@@ -527,3 +527,14 @@ across, then the Gardens of Netzach open.
 
 **How acts vary:** each world's `pause.visual` picks its picture (`pool`,
 `bridge`); the timing script is shared.
+
+---
+
+## 10 October 2026 — Path 31, The Furnace
+
+**Built:** `/paths/31/`, Malkuth to Hod, Shin, Fire, the head. Inside Adam's
+library of ancient knowledge: the teaching on knowledge as fire carried
+carefully, the audit beginning with what you carried up from the ground,
+discipline as tending the lamp. Flood (Inferno) and Drought (Cold Ash). The
+act is the lamp: name a belief, hold it above the flame between the shelves
+and ask whether it is true; after the reading, the Audit Hall of Hod opens.

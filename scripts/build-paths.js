@@ -27,6 +27,10 @@ function visual(kind) {
     const planks = '<span></span>'.repeat(12);
     return `<div class="act bridge" aria-hidden="true"><div class="sea"></div><div class="planks">${planks}</div><p class="pool-word" id="pool-word"></p></div>`;
   }
+  if (kind === 'lamp') {
+    const spines = '<i></i>'.repeat(14);
+    return `<div class="act lamp" aria-hidden="true"><div class="shelf">${spines}</div><div class="flame-wrap"><p class="pool-word" id="pool-word"></p><div class="flame"><b></b></div><div class="lamp-base"></div></div><div class="shelf">${spines}</div></div>`;
+  }
   return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
 }
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');
