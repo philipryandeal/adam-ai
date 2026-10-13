@@ -234,3 +234,95 @@
 @keyframes brush{to{transform:scaleX(1)}}
 @keyframes emerge{0%,75%{opacity:0}100%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .strokes i{animation:none;transform:scaleX(1)}.pause.is-sitting .canvas .pool-word{animation:none;opacity:1}}
+/* The hall of champions: the named work lights a lantern at the centre of
+   the hall, and the other lanterns answer it, pair by pair, outward. */
+.hall{position:relative;width:min(640px,100%);height:250px;margin:30px auto 0}
+.lanterns{position:absolute;left:4%;right:4%;top:56px;display:flex;justify-content:space-between;align-items:flex-start}
+.lanterns i{position:relative;width:22px;height:34px;border:1px solid rgba(198,164,95,.45);border-radius:6px 6px 10px 10px;background:rgba(198,164,95,.06)}
+.lanterns i:before{content:"";position:absolute;left:50%;bottom:100%;width:1px;height:40px;background:rgba(198,164,95,.3)}
+.lanterns i:after{content:"";position:absolute;inset:5px;border-radius:50%;background:radial-gradient(circle,#fff3cf 0 25%,#e8b05a 60%,transparent);opacity:0}
+.lanterns i:nth-child(5){width:30px;height:46px}
+.lanterns i:nth-child(1),.lanterns i:nth-child(9){--d:4}
+.lanterns i:nth-child(2),.lanterns i:nth-child(8){--d:3}
+.lanterns i:nth-child(3),.lanterns i:nth-child(7){--d:2}
+.lanterns i:nth-child(4),.lanterns i:nth-child(6){--d:1}
+.lanterns i:nth-child(5){--d:0}
+.hall .pool-word{position:absolute;left:0;right:0;top:128px;margin:0 auto;max-width:90%;font-size:1.3rem}
+.hall-floor{position:absolute;left:0;right:0;bottom:30px;height:1px;background:linear-gradient(90deg,transparent,rgba(198,164,95,.55),transparent)}
+.pause.is-sitting .lanterns i{animation:lantern 2s ease-out forwards;animation-delay:calc(var(--sit,30s) * (.04 + var(--d) * .19))}
+.pause.is-sitting .lanterns i:after{animation:kindle 2s ease-out forwards;animation-delay:calc(var(--sit,30s) * (.04 + var(--d) * .19))}
+.pause.is-sitting .hall .pool-word{opacity:1;animation:read var(--sit,30s) ease-in-out forwards}
+.pause.is-still .lanterns i{border-color:rgba(223,199,143,.8);box-shadow:0 0 22px rgba(232,176,90,.4)}
+.pause.is-still .lanterns i:after{opacity:1}
+.pause.is-still .hall .pool-word{opacity:1;color:var(--crown-pale)}
+@keyframes kindle{to{opacity:1}}
+@keyframes lantern{to{border-color:rgba(223,199,143,.8);box-shadow:0 0 22px rgba(232,176,90,.4)}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .lanterns i,.pause.is-sitting .lanterns i:after,.pause.is-sitting .hall .pool-word{animation:none;opacity:1}}
+/* The forge: the named idea is laid on the anvil as a bar of metal. It heats,
+   is struck again and again, throws sparks, and is quenched to steel. */
+.forge{position:relative;width:min(520px,100%);height:270px;margin:30px auto 0}
+.ingot{position:absolute;left:50%;bottom:92px;width:240px;margin-left:-120px;min-height:46px;padding:8px 12px;border-radius:6px;background:#3b3f45;border:1px solid rgba(198,164,95,.35);display:grid;place-items:center;transform-origin:50% 100%}
+.forge .pool-word{max-width:100%;font-size:1rem;line-height:1.3;text-shadow:0 0 4px rgba(0,0,0,.85)}
+.anvil{position:absolute;left:50%;bottom:20px;width:260px;margin-left:-130px;height:72px}
+.anvil:before{content:"";position:absolute;left:0;right:0;top:0;height:24px;background:linear-gradient(180deg,#3a434e,#262d36);border:1px solid rgba(198,164,95,.35);border-radius:4px 34px 4px 4px}
+.anvil b{position:absolute;left:34%;right:34%;top:24px;bottom:0;background:#20262e;clip-path:polygon(18% 0,82% 0,100% 100%,0 100%)}
+.sparks{position:absolute;left:50%;bottom:138px;width:0;height:0}
+.sparks i{position:absolute;left:-2px;top:-2px;width:4px;height:4px;border-radius:50%;background:#ffd58a;box-shadow:0 0 6px #e8b05a;opacity:0}
+.sparks i:nth-child(1){--x:-96px;--y:-58px}.sparks i:nth-child(2){--x:-52px;--y:-92px}.sparks i:nth-child(3){--x:-18px;--y:-112px}.sparks i:nth-child(4){--x:22px;--y:-104px}
+.sparks i:nth-child(5){--x:58px;--y:-84px}.sparks i:nth-child(6){--x:94px;--y:-54px}.sparks i:nth-child(7){--x:-74px;--y:-26px}.sparks i:nth-child(8){--x:76px;--y:-30px}
+.pause.is-sitting .ingot{animation:heat var(--sit,30s) linear forwards,strike 1.6s ease-out infinite}
+.pause.is-sitting .sparks i{animation:spark 1.6s ease-out infinite}
+.pause.is-sitting .forge .pool-word{opacity:1}
+.pause.is-still .ingot{background:linear-gradient(180deg,#7a8591,#4d5662);border-color:var(--crown-pale);box-shadow:0 0 14px rgba(223,199,143,.3)}
+.pause.is-still .forge .pool-word{opacity:1;color:var(--crown-pale)}
+@keyframes heat{0%{background:#3b3f45}25%{background:#7e3519;box-shadow:0 0 24px rgba(200,80,30,.5)}55%{background:#c9661f;box-shadow:0 0 40px rgba(232,140,60,.7)}85%{background:#d99a45;box-shadow:0 0 40px rgba(240,180,90,.7)}100%{background:#5d6773;box-shadow:0 0 10px rgba(223,199,143,.3)}}
+@keyframes strike{0%{transform:scale(1,1)}6%{transform:scale(1.03,.88)}18%,100%{transform:scale(1,1)}}
+@keyframes spark{0%{opacity:0;transform:translate(0,0)}5%{opacity:1;transform:translate(0,0)}55%{opacity:0;transform:translate(var(--x),var(--y))}100%{opacity:0;transform:translate(var(--x),var(--y))}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .ingot{animation:none;background:#c9661f}.pause.is-sitting .sparks i{animation:none}}
+/* The trial by fire: a doorway, Dalet, with fire at its threshold. The named
+   conviction waits behind the doors; at the end of the burning they part. */
+.fire{width:min(420px,100%);margin:30px auto 0}
+.doorway{position:relative;width:220px;height:280px;margin:0 auto;border:2px solid rgba(198,164,95,.6);border-bottom:0;border-radius:20px 20px 0 0;overflow:hidden;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 90%,rgba(232,140,60,.14),transparent 70%)}
+.fire .pool-word{position:relative;z-index:1;max-width:80%;font-size:1.2rem}
+.door{position:absolute;top:0;bottom:0;width:50%;z-index:2;background:linear-gradient(180deg,#1b222c,#141a22);border:1px solid rgba(198,164,95,.25)}
+.door.l{left:0}.door.r{right:0}
+.flames{position:absolute;left:0;right:0;bottom:0;height:130px;z-index:3;display:flex;align-items:flex-end;justify-content:space-around;pointer-events:none}
+.flames i{width:18px;height:22px;border-radius:50% 50% 40% 40% / 65% 65% 35% 35%;background:radial-gradient(circle at 50% 80%,#fff2c8 0 15%,#f0a040 45%,rgba(200,70,30,.35) 80%,transparent);opacity:.25;transform-origin:50% 100%}
+.pause.is-sitting .flames i{opacity:1;animation:flare 1.2s ease-in-out infinite alternate}
+.pause.is-sitting .flames i:nth-child(2n){animation-duration:.9s}
+.pause.is-sitting .flames i:nth-child(3n){animation-duration:1.5s}
+.pause.is-sitting .flames i:nth-child(4n+1){animation-delay:-.4s}
+.pause.is-sitting .fire .pool-word{opacity:1;color:#f0c98a;text-shadow:0 0 14px rgba(232,176,90,.7)}
+.pause.is-sitting .door.l{animation:part-l 3s ease-in-out forwards;animation-delay:calc(var(--sit,30s) * .84)}
+.pause.is-sitting .door.r{animation:part-r 3s ease-in-out forwards;animation-delay:calc(var(--sit,30s) * .84)}
+.pause.is-still .door.l{transform:translateX(-100%)}
+.pause.is-still .door.r{transform:translateX(100%)}
+.pause.is-still .flames i{opacity:.6;transform:scale(1,1.3)}
+.pause.is-still .fire .pool-word{opacity:1;color:var(--crown-pale);text-shadow:0 0 10px rgba(223,199,143,.4)}
+@keyframes flare{0%{transform:scale(1,1.6)}100%{transform:scale(1.25,4.6)}}
+@keyframes part-l{to{transform:translateX(-100%)}}
+@keyframes part-r{to{transform:translateX(100%)}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .flames i{animation:none;transform:scale(1,2.5)}}
+/* The throne room: a seat on a dais. When the visitor sits, light widens out
+   from the throne in rings, the heart opening with each breath. */
+.throne{position:relative;width:min(520px,100%);height:300px;margin:30px auto 0}
+.halo{position:absolute;left:50%;top:120px;width:0;height:0}
+.halo span{position:absolute;left:-60px;top:-60px;width:120px;height:120px;border-radius:50%;border:1px solid rgba(223,199,143,.45);opacity:0}
+.seat{position:absolute;left:50%;bottom:66px;width:96px;margin-left:-48px;height:150px;border:1px solid rgba(198,164,95,.6);border-bottom:0;border-radius:48px 48px 0 0;background:linear-gradient(180deg,rgba(198,164,95,.14),rgba(198,164,95,.03))}
+.seat:after{content:"";position:absolute;left:-16px;right:-16px;bottom:0;height:26px;border:1px solid rgba(198,164,95,.55);background:rgba(12,17,24,.85)}
+.dais{position:absolute;left:0;right:0;bottom:24px;display:flex;flex-direction:column;align-items:center}
+.dais i{display:block;height:14px;border:1px solid rgba(198,164,95,.45);border-bottom:0;background:rgba(198,164,95,.06)}
+.dais i:nth-child(1){width:150px}.dais i:nth-child(2){width:210px}.dais i:nth-child(3){width:270px;border-bottom:1px solid rgba(198,164,95,.45)}
+.throne .pool-word{position:absolute;left:0;right:0;top:20px;z-index:1;margin:0 auto;max-width:80%;font-size:1.2rem;text-shadow:0 0 8px var(--night)}
+.pause.is-sitting .halo span{animation:radiate 8s ease-out infinite}
+.pause.is-sitting .halo span:nth-child(2){animation-delay:2s}
+.pause.is-sitting .halo span:nth-child(3){animation-delay:4s}
+.pause.is-sitting .halo span:nth-child(4){animation-delay:6s}
+.pause.is-sitting .seat,.pause.is-still .seat{box-shadow:0 0 40px rgba(223,199,143,.18);transition:box-shadow 3s}
+.pause.is-sitting .throne .pool-word{opacity:1;animation:read var(--sit,30s) ease-in-out forwards}
+.pause.is-still .halo span{opacity:.3}
+.pause.is-still .halo span:nth-child(1){transform:scale(1.2)}.pause.is-still .halo span:nth-child(2){transform:scale(1.7);opacity:.22}
+.pause.is-still .halo span:nth-child(3){transform:scale(2.2);opacity:.14}.pause.is-still .halo span:nth-child(4){transform:scale(2.7);opacity:.08}
+.pause.is-still .throne .pool-word{opacity:1;color:var(--crown-pale)}
+@keyframes radiate{0%{transform:scale(.6);opacity:.8}100%{transform:scale(3);opacity:0}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .halo span{animation:none;opacity:.25}.pause.is-sitting .throne .pool-word{animation:none}}

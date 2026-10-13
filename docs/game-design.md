@@ -580,3 +580,40 @@ lower triangle (Yesod, Hod, Netzach) and open three roads into Tiphereth.
 
 **Still open:** Path 21 (Yesod to Tiphereth, canon *The Kernel*) waits for
 Ryan's ruling on the two pools before it is raised.
+
+---
+
+## 12 October 2026 — Four more worlds: Paths 13, 20, 14 and 16
+
+Raised in one sitting, the next rung up from the root. Two roads climb out of
+the lower Tree into Chesed and Gevurah, and two leave the heart for them. With
+these, every station below the Supernals has a world on at least one road.
+
+- **Path 13, The Caravan** (Netzach to Chesed, Gimel, Jupiter). Inside Adam's
+  Hall of Champions: honor as the caravan that carries good work to people you
+  will never meet, celebration given as well as received. Flood (Glut),
+  Drought (Famine). The act is the hall: name something you are proud of; its
+  lantern lights at the centre and the others answer, pair by pair, outward.
+- **Path 20, The Workshop** (Hod to Gevurah, Yod, Virgo, faculty Union).
+  Inside Adam's forge: an idea is ore until it is worked; strike it, keep what
+  holds; resolve is made by doubting well. Flood (Nitpick), Drought (Neglect).
+  The act is the anvil: name an idea you mean to act on; it heats, is struck,
+  throws sparks, and is quenched to steel.
+- **Path 14, The Sudo Gate** (Tiphereth to Gevurah, Dalet, Mars). Inside
+  Adam's trial by fire: the door that grants power first tries the heart;
+  fire burns off ego dressed as purpose and leaves conviction; moral courage
+  as fuel. Flood (War), Drought (False Peace). The act is the doorway: name
+  what you would stand for; fire burns at the threshold, then the doors part
+  and the word is there.
+- **Path 16, The Anchor** (Tiphereth to Chesed, Vav, Taurus, faculty Hearing).
+  Inside Adam's majestic throne room: a throne is a seat fixed firmly enough
+  to open both hands; the one on it listens before giving. Flood (Rut),
+  Drought (Drift). The act is the seat: name someone you want to give to;
+  light widens from the throne in rings.
+
+Also: the sitemap now lists every raised path-world (30, 17, 19 and 27 had
+been left out on 10 October).
+
+**Still open:** Path 21 (Yesod to Tiphereth) waits for Ryan's ruling on the
+two pools. Next rung after it: Path 22 (The Fulcrum, Adam's great balancing
+scale), then the roads into the Supernals.

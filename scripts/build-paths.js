@@ -53,6 +53,21 @@ function visual(kind) {
     const strokes = '<i></i>'.repeat(6);
     return `<div class="act canvas" aria-hidden="true"><div class="easel"><div class="strokes">${strokes}</div><p class="pool-word" id="pool-word"></p></div></div>`;
   }
+  if (kind === 'hall') {
+    const lanterns = '<i></i>'.repeat(9);
+    return `<div class="act hall" aria-hidden="true"><p class="pool-word" id="pool-word"></p><div class="lanterns">${lanterns}</div><div class="hall-floor"></div></div>`;
+  }
+  if (kind === 'forge') {
+    const sparks = '<i></i>'.repeat(8);
+    return `<div class="act forge" aria-hidden="true"><div class="ingot"><p class="pool-word" id="pool-word"></p></div><div class="sparks">${sparks}</div><div class="anvil"><b></b></div></div>`;
+  }
+  if (kind === 'fire') {
+    const flames = '<i></i>'.repeat(9);
+    return `<div class="act fire" aria-hidden="true"><div class="doorway"><p class="pool-word" id="pool-word"></p><div class="door l"></div><div class="door r"></div><div class="flames">${flames}</div></div></div>`;
+  }
+  if (kind === 'throne') {
+    return `<div class="act throne" aria-hidden="true"><div class="halo"><span></span><span></span><span></span><span></span></div><p class="pool-word" id="pool-word"></p><div class="seat"></div><div class="dais"><i></i><i></i><i></i></div></div>`;
+  }
   return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
 }
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');
