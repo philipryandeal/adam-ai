@@ -139,7 +139,7 @@ ${st.adam.map(p => '        <p>' + esc(p) + '</p>').join('\n')}
       <div class="section-heading">
         <p class="eyebrow">Conduits</p>
         <h2>The Roads from Here</h2>
-        <p>Each road is a conduit to another station. Their worlds are being raised one at a time. Where a world stands, the road leads into it; elsewhere, for now, it leads straight to its far station.</p>
+        <p>Each road is a conduit to another station, and every road has its world. Walk a road and you enter its world before you reach the far station.</p>
       </div>
       <ul class="roads">${roads(s)}
       </ul>

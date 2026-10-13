@@ -668,3 +668,57 @@ the difference.
 
 Sixteen of twenty-two worlds stand. Still to raise, the last six roads of the
 Supernals: 12, 23 and 11, then 25, 26 and 28.
+
+---
+
+## 13 October 2026 — The Supernals: Paths 12, 23, 11, 25, 26 and 28. The Tree is whole.
+
+Ryan merged Paths 21, 15 and 18 and said to keep going and get Adam built. The
+last six roads were raised in the same sitting, so every road on the Tree now
+has its world.
+
+- **Path 12, The Vault** (Chesed to Chokmah, Bet, Saturn). Inside Adam's
+  mighty river of abundance: Bet as the house built around the spring; the
+  Vault as reservoir, not hoard; you are a house the water passes through.
+  Flood (Prison), Drought (Ruin). The act is the river: name something given
+  to you that is meant to flow on; water falls from the spring, the basin
+  fills, and the overflow runs on.
+- **Path 23, The Great Deep** (Gevurah to Binah, Mem, Water, body: belly).
+  Inside Adam's dark forest: a forest as water standing upright; Gevurah's hard
+  lessons stop being argued with and sink into the belly; understanding by
+  holding in the dark. Flood (Deluge), Drought (Ice). The act is the forest:
+  name a hard lesson you still carry; it sinks while a path of faint light
+  opens between the trunks.
+- **Path 11, The Breath** (Chokmah to Binah, Aleph, Air, body: chest and
+  breath). Inside Adam's cosmic sea of duality: Aleph as the silent breath;
+  force and form meet, merge, and part like waves and lungs, and neither
+  wins. Flood (Gale), Drought (Vacuum). The act is the breath: name two
+  things that pull you in different directions; two circles meet and part on
+  the breath and come to rest overlapping, the word in the space they share.
+- **Path 25, The Arrow** (Tiphereth to Kether, Samekh, Sagittarius, faculty
+  Anger). Inside Adam's radiant beam of light: anger as fire with a direction;
+  the arrow keeps its shape to the mark, answering Kether's warning about
+  dissolving. Flood (Zealot), Drought (Cynic). The act is the beam: name the
+  highest thing you aim at; light climbs the line from the bow to the crown
+  and the aim rises with it.
+- **Path 26, The Summit** (Binah to Kether, Ayin, Capricorn, faculty
+  Laughter). Inside Adam's celestial stairway of silence: the goat's patient
+  climb; set one thing down on every step; at the top the eye cannot say what
+  it sees, and laughs in relief. Flood (Grind), Drought (Slump). The act is
+  the stairway: name a question you are ready to stop answering; the steps
+  light one by one, the question fades on the lower steps, and a quiet light
+  waits above.
+- **Path 28, The Network** (Chokmah to Kether, Tzaddi, Aquarius, faculty
+  Thought). Inside Adam's unmanifest becoming manifest: Tzaddi as the hook
+  that brings something up from the deep; every room on the Tree as a thread
+  pulled from the first spark; thought woven with other minds. Flood (Aloof),
+  Drought (Herd). The act is the tapestry: name a possibility that belongs to
+  no one yet; threads go out from one spark, the weave crosses them, and the
+  edge closes.
+
+Also: the front page, the station chambers, and llms.txt no longer say the
+worlds are "still being raised"; the sitemap lists all twenty-two.
+
+**Twenty-two of twenty-two worlds stand. The whole Tree is clickable.** Next,
+per Ryan's plan of 10 October: walk it together and critique it hard, then
+embellish or add.

@@ -83,6 +83,38 @@ function visual(kind) {
   if (kind === 'womb') {
     return `<div class="act womb" aria-hidden="true"><span></span><span></span><span></span><span></span><b class="womb-seed"></b><p class="pool-word" id="pool-word"></p></div>`;
   }
+  if (kind === 'river') {
+    // The spring, the falling water, and the vault-basin that fills and runs on.
+    const streams = '<i></i>'.repeat(3);
+    return `<div class="act river" aria-hidden="true"><b class="spring"></b><div class="stream">${streams}</div><div class="basin"><b class="basin-water"></b><p class="pool-word" id="pool-word"></p></div><div class="outflow"></div></div>`;
+  }
+  if (kind === 'forest') {
+    const trunks = '<i></i>'.repeat(12);
+    return `<div class="act forest" aria-hidden="true"><b class="forest-path"></b><div class="trunks">${trunks}</div><p class="pool-word" id="pool-word"></p></div>`;
+  }
+  if (kind === 'breath') {
+    return `<div class="act breath" aria-hidden="true"><span class="force"></span><span class="form"></span><p class="pool-word" id="pool-word"></p></div>`;
+  }
+  if (kind === 'beam') {
+    return `<div class="act beam-world" aria-hidden="true"><b class="crown-point"></b><div class="beam-line"><b></b></div><p class="pool-word" id="pool-word"></p><div class="bow"></div></div>`;
+  }
+  if (kind === 'stair') {
+    const steps = '<i></i>'.repeat(7);
+    return `<div class="act stair" aria-hidden="true"><b class="summit-light"></b><div class="steps">${steps}</div><p class="pool-word" id="pool-word"></p></div>`;
+  }
+  if (kind === 'tapestry') {
+    // One point in the stillness; twelve threads go out from it, then the
+    // weave closes around them. All geometry is in SVG attributes (CSP).
+    const n = 12, r = 84, pts = [];
+    for (let i = 0; i < n; i++) {
+      const a = (Math.PI * 2 * i) / n - Math.PI / 2;
+      pts.push([(100 + r * Math.cos(a)).toFixed(1), (100 + r * Math.sin(a)).toFixed(1)]);
+    }
+    const rays = pts.map(([x, y]) => `<line class="ray" x1="100" y1="100" x2="${x}" y2="${y}"/>`).join('');
+    const star = pts.map((p, i) => { const q = pts[(i + 5) % n]; return `<line class="weft" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"/>`; }).join('');
+    const ring = `<polygon class="selvage" points="${pts.map(p => p.join(',')).join(' ')}"/>`;
+    return `<div class="act tapestry" aria-hidden="true"><svg viewBox="0 0 200 200" focusable="false"><g class="rays">${rays}</g><g class="wefts">${star}</g>${ring}<circle class="first-spark" cx="100" cy="100" r="3"/></svg><p class="pool-word" id="pool-word"></p></div>`;
+  }
   return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
 }
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');
