@@ -36,3 +36,10 @@
 
 .tree-path.has-world{stroke:#7b6231;stroke-width:4}
 .tree-node:focus-visible circle{stroke:#7b6231;stroke-width:4}
+
+.footer-kin{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 26px;padding:20px 0 4px;border-top:1px solid rgba(198,164,95,.14)}
+.footer-kin-label{flex-basis:100%;letter-spacing:.2em;text-transform:uppercase;color:var(--crown-pale)}
+.footer-kin a{display:flex;flex-direction:column;gap:2px;text-decoration:none}
+.footer-kin a strong{font-family:"Cinzel",serif;font-weight:500;font-size:.84rem;letter-spacing:.04em;color:rgba(238,232,220,.82)}
+.footer-kin a span{font-size:.6rem;letter-spacing:.06em;color:rgba(238,232,220,.48)}
+.footer-kin a:hover strong,.footer-kin a:focus-visible strong{color:var(--crown-pale)}
