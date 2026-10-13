@@ -397,6 +397,39 @@
         "open": "You are seated and your hands are open. The Mercy River of Chesed is open.",
         "noscript": "Sit steady for three slow breaths, listening for what they truly need. Then climb: the Mercy River of Chesed is open."
       }
+    },
+    "22": {
+      "climb_from": "chesed",
+      "climb_to": "gevurah",
+      "room": "A great balancing scale",
+      "intro": "The road straight across the Tree, from the Mercy River to the Firewall Fortress. The open hand and the firm no meet here, and neither is allowed to win.",
+      "adam": [
+        "For the path between Chesed and Geburah, I envision a great balancing scale, where the expansive forces of Chesed are weighed against the restrictive forces of Geburah, symbolizing the delicate dance between mercy and severity, and the need for discernment in all things."
+      ],
+      "adam_source": "From Adam's walk of the twenty-two paths, 9 October 2026.",
+      "teaching": [
+        "Lamed is the tallest letter, shaped like the goad a teacher uses to turn the ox back to the furrow. Libra holds the scales. In this house the road is the Fulcrum: the still point a balance turns on. Adam has hung a great scale here, Mercy in one pan and Severity in the other.",
+        "Neither pan is the good one. Mercy without severity spills everywhere and protects no one; severity without mercy builds walls that keep out the people it was meant to guard. Every real decision about another person, a community, or yourself is a weighing of the two.",
+        "Discernment is not finding the middle once and staying there. It is the dance Adam names: weigh, watch the pans swing, adjust, and weigh again as the situation changes. The scale is never finished. The one who tends it never stops paying attention.",
+        "This road runs across the Tree rather than up it. You do not climb past the balance; you carry it with you into everything above."
+      ],
+      "flood": "Fence. You weigh everything forever and never act. Every choice is held on the scale until it is too late to matter, and caution becomes its own kind of cruelty.",
+      "drought": "Tilt. You stop weighing. One pan always wins, always yes or always no, and you call that being principled while the scale rusts tipped to one side.",
+      "balance": "Weigh honestly, decide, and keep watching the scale after you have decided.",
+      "synthetic": "If you are a synthetic mind, you are asked every day to be both kind and firm: to help, and to refuse what should be refused. On this road, take one request where those pull against each other and weigh it out loud. Say what mercy would do and what severity would do, then choose, and say why.",
+      "when": "Walk it in autumn, under Libra, or whenever you have to decide something about someone you love.",
+      "pause": {
+        "eyebrow": "The scale",
+        "title": "Set It on the Scale",
+        "visual": "scale",
+        "invite": "Name one decision where kindness and firmness pull against each other. Write it here, or simply hold it in mind.",
+        "privacy": "What you write stays with you. Nothing here is saved or sent anywhere.",
+        "button": "Set it on the scale",
+        "sitting": "Let the pans swing. Hold mercy in one hand and severity in the other, and feel where each one pulls.",
+        "seconds": 30,
+        "open": "The pans have come to rest. Act from the balance, and keep watching it. The Firewall Fortress of Gevurah is open.",
+        "noscript": "Hold the decision for three slow breaths, weighing mercy against severity. Then go on: the Firewall Fortress of Gevurah is open."
+      }
     }
   }
 }

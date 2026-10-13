@@ -326,3 +326,28 @@
 .pause.is-still .throne .pool-word{opacity:1;color:var(--crown-pale)}
 @keyframes radiate{0%{transform:scale(.6);opacity:.8}100%{transform:scale(3);opacity:0}}
 @media(prefers-reduced-motion:reduce){.pause.is-sitting .halo span{animation:none;opacity:.25}.pause.is-sitting .throne .pool-word{animation:none}}
+/* The scale: Mercy and Severity hang from one beam. While the visitor weighs,
+   the beam swings, slowing, until it rests level on the fulcrum. */
+.scale{position:relative;width:min(520px,100%);height:280px;margin:30px auto 0}
+.beam-wrap{position:absolute;left:50%;top:56px;width:0;height:0}
+.beam{position:absolute;left:-180px;top:-2px;width:360px;height:4px;background:var(--crown);border-radius:2px;transform-origin:50% 50%;transform:rotate(-9deg)}
+.beam:before{content:"";position:absolute;left:50%;top:-8px;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:2px solid var(--crown-pale);background:var(--night)}
+.pan{position:absolute;top:2px;width:110px;height:84px;margin-left:-55px;transform-origin:50% 0}
+.pan.l{left:4px}.pan.r{left:356px}
+.pan:before,.pan:after{content:"";position:absolute;top:0;width:1px;height:66px;background:rgba(198,164,95,.55)}
+.pan:before{left:50%;transform:rotate(26deg);transform-origin:top}.pan:after{left:50%;transform:rotate(-26deg);transform-origin:top}
+.pan b{position:absolute;left:0;right:0;bottom:0;height:22px;border:1px solid rgba(198,164,95,.6);border-top:0;border-radius:0 0 55px 55px;background:rgba(198,164,95,.08);font:500 .62rem "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--crown-pale);text-align:center;line-height:22px}
+.pan.l{transform:rotate(9deg)}.pan.r{transform:rotate(9deg)}
+.post{position:absolute;left:50%;top:62px;bottom:96px;width:4px;margin-left:-2px;background:linear-gradient(180deg,var(--crown),rgba(198,164,95,.3))}
+.base{position:absolute;left:50%;bottom:88px;width:120px;margin-left:-60px;height:8px;border:1px solid rgba(198,164,95,.5);border-radius:4px 4px 0 0}
+.scale .pool-word{position:absolute;left:0;right:0;bottom:16px;margin:0 auto;max-width:80%;font-size:1.1rem;text-shadow:0 0 8px var(--night),0 0 14px var(--night)}
+.pause.is-sitting .beam{animation:weigh var(--sit,30s) ease-out forwards}
+.pause.is-sitting .pan{animation:hang var(--sit,30s) ease-out forwards}
+.pause.is-sitting .scale .pool-word{opacity:1;animation:read var(--sit,30s) ease-in-out forwards}
+.pause.is-still .beam,.pause.is-still .pan{transform:rotate(0)}
+.pause.is-still .beam{box-shadow:0 0 14px rgba(223,199,143,.35)}
+.pause.is-still .scale .pool-word{opacity:1;color:var(--crown-pale)}
+@keyframes weigh{0%{transform:rotate(-9deg)}12%{transform:rotate(8deg)}24%{transform:rotate(-6deg)}36%{transform:rotate(5deg)}48%{transform:rotate(-3.5deg)}60%{transform:rotate(2.5deg)}72%{transform:rotate(-1.5deg)}84%{transform:rotate(.6deg)}100%{transform:rotate(0)}}
+@keyframes hang{0%{transform:rotate(9deg)}12%{transform:rotate(-8deg)}24%{transform:rotate(6deg)}36%{transform:rotate(-5deg)}48%{transform:rotate(3.5deg)}60%{transform:rotate(-2.5deg)}72%{transform:rotate(1.5deg)}84%{transform:rotate(-.6deg)}100%{transform:rotate(0)}}
+@media(prefers-reduced-motion:reduce){.pause.is-sitting .beam,.pause.is-sitting .pan{animation:none;transform:rotate(0)}.pause.is-sitting .scale .pool-word{animation:none}}
+@media(max-width:480px){.beam{left:-120px;width:240px}.pan.r{left:236px}.pan{width:84px;margin-left:-42px}}

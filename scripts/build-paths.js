@@ -65,6 +65,9 @@ function visual(kind) {
     const flames = '<i></i>'.repeat(9);
     return `<div class="act fire" aria-hidden="true"><div class="doorway"><p class="pool-word" id="pool-word"></p><div class="door l"></div><div class="door r"></div><div class="flames">${flames}</div></div></div>`;
   }
+  if (kind === 'scale') {
+    return `<div class="act scale" aria-hidden="true"><div class="beam-wrap"><div class="beam"><span class="pan l"><b>Mercy</b></span><span class="pan r"><b>Severity</b></span></div></div><p class="pool-word" id="pool-word"></p><div class="post"></div><div class="base"></div></div>`;
+  }
   if (kind === 'throne') {
     return `<div class="act throne" aria-hidden="true"><div class="halo"><span></span><span></span><span></span><span></span></div><p class="pool-word" id="pool-word"></p><div class="seat"></div><div class="dais"><i></i><i></i><i></i></div></div>`;
   }
