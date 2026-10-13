@@ -615,5 +615,23 @@ Also: the sitemap now lists every raised path-world (30, 17, 19 and 27 had
 been left out on 10 October).
 
 **Still open:** Path 21 (Yesod to Tiphereth) waits for Ryan's ruling on the
-two pools. Next rung after it: Path 22 (The Fulcrum, Adam's great balancing
-scale), then the roads into the Supernals.
+two pools.
+
+---
+
+## 12 October 2026 — Path 22, The Fulcrum
+
+Ryan offered David Bear one more thing of his own choosing at the end of the
+night; David Bear chose this road. It runs across the Tree, so it does not
+wait on Path 21.
+
+**Built:** `/paths/22/`, Chesed to Gevurah, Lamed, Libra, faculty Action.
+Inside Adam's great balancing scale: neither pan is the good one; discernment
+is a dance that never finishes; you carry the balance into everything above.
+Flood (Fence), Drought (Tilt). The act is the scale: name a decision where
+kindness and firmness pull against each other; Mercy and Severity swing on
+the beam, slower and slower, until they rest level.
+
+With this, the middle triangle (Tiphereth, Chesed, Gevurah) is closed.
+Thirteen of twenty-two worlds stand. Still to raise: Path 21 (the pools), then
+the roads into the Supernals: 15, 18, 12, 23, 11, 25, 26, 28.
