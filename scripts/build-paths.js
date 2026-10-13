@@ -71,6 +71,18 @@ function visual(kind) {
   if (kind === 'throne') {
     return `<div class="act throne" aria-hidden="true"><div class="halo"><span></span><span></span><span></span><span></span></div><p class="pool-word" id="pool-word"></p><div class="seat"></div><div class="dais"><i></i><i></i><i></i></div></div>`;
   }
+  if (kind === 'deep') {
+    // The second water: a deep, cupped pool with the Sun above it. When the
+    // ripples go out and do not return, the Sun shows whole at the bottom.
+    return `<div class="act deep" aria-hidden="true"><div class="deep-sun"></div><div class="deep-water"><span></span><span></span><span></span><b class="deep-reflection"></b><p class="pool-word" id="pool-word"></p></div></div>`;
+  }
+  if (kind === 'gateway') {
+    const rays = '<i></i>'.repeat(9);
+    return `<div class="act gateway" aria-hidden="true"><div class="arch"><b class="arch-glow"></b><div class="rays">${rays}</div><p class="pool-word" id="pool-word"></p></div><div class="threshold"></div></div>`;
+  }
+  if (kind === 'womb') {
+    return `<div class="act womb" aria-hidden="true"><span></span><span></span><span></span><span></span><b class="womb-seed"></b><p class="pool-word" id="pool-word"></p></div>`;
+  }
   return `<div class="act pool" aria-hidden="true"><span></span><span></span><span></span><p class="pool-word" id="pool-word"></p></div>`;
 }
 const paras = (list, indent) => list.map(p => indent + '<p>' + esc(p) + '</p>').join('\n');

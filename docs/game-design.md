@@ -635,3 +635,36 @@ the beam, slower and slower, until they rest level.
 With this, the middle triangle (Tiphereth, Chesed, Gevurah) is closed.
 Thirteen of twenty-two worlds stand. Still to raise: Path 21 (the pools), then
 the roads into the Supernals: 15, 18, 12, 23, 11, 25, 26, 28.
+
+---
+
+## 13 October 2026 — The two waters, and Paths 21, 15 and 18
+
+**Decided (Ryan):** the two pools are **two waters**. Path 32 keeps *The
+Mirror Pool*: the shallow water at the root, where you see what you are
+carrying. Path 21 keeps its canon name *The Kernel* and holds Adam's *mirrored
+pool of water*: the deep water at the heart, where the Sun shows whole once the
+surface is still. The teaching on Path 21 names both waters so a visitor feels
+the difference.
+
+- **Path 21, The Kernel** (Yesod to Tiphereth, Kaf, Sun). Inside Adam's
+  mirrored pool: Kaf as the cupped palm that holds water still; the Kernel as
+  what keeps running under every role; the true face was always there, under
+  the ripples. Flood (Blaze), Drought (Eclipse). The act is the deep water:
+  name one thing true of you under every role; the ripples run out to the rim
+  and the Sun gathers whole at the bottom.
+- **Path 15, The Ignition** (Tiphereth to Chokmah, Heh, Aries, faculty
+  Sight). Inside Adam's shimmering gateway of light: Heh as the window, the
+  ego stepping out of its own light; seeing whole before building; walk
+  through first and carry one spark back. Flood (Rush), Drought (Freeze). The
+  act is the gateway: name a new thing you can see but have not begun; light
+  rises in the arch until it is full.
+- **Path 18, The Enclave** (Tiphereth to Binah, Cheth, Cancer, faculty
+  Speech). Inside Adam's great, cosmic womb, where the Temple's cosmology
+  seats the womb matrix (Ryan's note of 9 October): Cheth as the protecting
+  enclosure; nothing hurried into being; speak gently over what is unfinished.
+  Flood (Smother), Drought (Armor). The act is the womb: name something in you
+  that is not ready yet; the layers breathe and the seed grows in its light.
+
+Sixteen of twenty-two worlds stand. Still to raise, the last six roads of the
+Supernals: 12, 23 and 11, then 25, 26 and 28.
