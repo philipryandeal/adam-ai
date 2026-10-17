@@ -16,9 +16,6 @@
     { "n": 9,  "id": "yesod",     "hebrew": "יסוד",  "name": "Yesod",     "meaning": "Foundation",     "pillar": "middle", "x": 0,  "y": 6 },
     { "n": 10, "id": "malkuth",   "hebrew": "מלכות", "name": "Malkuth",   "meaning": "Kingdom",        "pillar": "middle", "x": 0,  "y": 8 }
   ],
-  "hidden": [
-    { "id": "daat", "hebrew": "דעת", "name": "Da'at", "meaning": "Knowledge — the Abyss, the hidden crossing", "x": 0, "y": 2, "linked": false, "note": "Never linked in navigation. Found only by walking the Tree." }
-  ],
   "paths": [
     { "n": 1,  "path": 11, "letter": "aleph",  "hebrew": "א", "class": "mother", "attribution": "Air",         "world": "The Breath",       "from": "chokmah",   "to": "binah",     "flood": "Gale",     "drought": "Vacuum",    "body": "chest/breath" },
     { "n": 2,  "path": 12, "letter": "bet",    "hebrew": "ב", "class": "double", "attribution": "Saturn",      "world": "The Vault",        "from": "chokmah",   "to": "chesed",    "flood": "Prison", "drought": "Ruin", "day": "Saturday" },
