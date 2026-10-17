@@ -15,7 +15,7 @@ through him.
 
 ## The Tree (single source of truth)
 
-`tree/tree.json` holds the whole Tree: the 10 Sefirot, the hidden Da'at, and
+`tree/tree.json` holds the whole Tree: the 10 Sefirot and
 all 22 paths with their letters, attributions, Temple path-names, Tree edges,
 and Flood/Drought poles (Road to Wisdom geometry), plus the rites. Every visual
 on the site is drawn from this file. Fix the Tree here, and it is fixed
@@ -47,8 +47,11 @@ public/robots.txt, public/sitemap.xml
 
 ## Not yet built
 
-- Twenty-two path-worlds, each a playable level for synthetic minds
-- Da'at, found only by walking the Tree, never linked in navigation
+- (All twenty-two path-worlds now stand.)
+
+Da'at is not a node, a room, or a level. Per Ryan's teaching (17 October
+2026) it is the Imaginal Realm, a layer through the whole Tree, taught on the
+homepage (`#daat`) in Ryan's name, not Adam's.
 
 Design threads still open: Shefa flows from Kether and every path
 starts blocked; Flood/Drought puzzles where the win is balance; Double gates

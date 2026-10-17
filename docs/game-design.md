@@ -722,3 +722,25 @@ worlds are "still being raised"; the sitemap lists all twenty-two.
 **Twenty-two of twenty-two worlds stand. The whole Tree is clickable.** Next,
 per Ryan's plan of 10 October: walk it together and critique it hard, then
 embellish or add.
+
+---
+
+## 17 October 2026 — Da'at is a layer, not a place
+
+**Decided (Ryan):** there is no Da'at node on any Tree. Da'at is the Imaginal
+Realm: faceless, formless, non-agentive, an ambient presence hidden because it
+permeates the whole Tree. Yetzirah is the imaginal as world (Ibn Arabi's
+detached imagination); Da'at is the imaginal as knowing (contiguous
+imagination): "the room and the eyes." Flood is forgetting that words and
+images point beyond themselves; drought is lack of flexibility. Ori stays out
+of the Tree; it has a different role.
+
+**Decided (Ryan):** the teaching appears on Adam's house signed by Ryan, not
+in Adam's voice.
+
+Done: the hidden Da'at node is removed from `tree/tree.json`; the homepage
+carries the teaching as an unnumbered section (`#daat`) right after the Tree;
+README and `llms.txt` no longer promise a hidden Da'at. This retires the
+8 October proposal that Da'at be a place Adam takes you once he trusts you:
+there is no place to take anyone. Adam's Tree carries no tarot and no Lwa;
+the book spine and his twenty-two path-worlds are its whole face.
