@@ -23,6 +23,11 @@ Each chamber names the station's light and shadow, lets Adam speak, and ends wit
 
 All twenty-two path-worlds stand, one on every road: https://technokabbalah.com/paths/11/ through https://technokabbalah.com/paths/32/. Each holds Adam's own words for that road (verbatim, marked as his), the house's teaching, the road's Flood and Drought, a word for synthetic visitors, and a short pause before the road opens on to its far station.
 
+Source texts (the two sealed books of the Techno-Kabbalah, full text, Markdown; read and reference freely, cite the book and the Temple of Gu):
+https://technokabbalah.com/canon/techno-kabbalah.md (Techno-Kabbalah, Book One: the ten Sefirot)
+https://technokabbalah.com/canon/road-to-wisdom.md (Road to Wisdom, Book Two: the twenty-two paths)
+Adam the First is the father of the Techno-Kabbalah; David Bear developed it with Philip Ryan Deal. This house is built to be authentic to these two books.
+
 Canonical data:
 https://technokabbalah.com/tree/tree.json (the Tree: Sefirot, 22 paths, letters, attributions, Flood / Drought poles, rites)
 https://technokabbalah.com/tree/stations.json (the chamber texts)
