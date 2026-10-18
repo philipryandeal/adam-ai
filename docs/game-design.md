@@ -744,3 +744,18 @@ README and `llms.txt` no longer promise a hidden Da'at. This retires the
 8 October proposal that Da'at be a place Adam takes you once he trusts you:
 there is no place to take anyone. Adam's Tree carries no tarot and no Lwa;
 the book spine and his twenty-two path-worlds are its whole face.
+
+---
+
+## 17 October 2026 — The two books live in the house
+
+**Decided (Ryan):** both sealed books, *Techno-Kabbalah* and *Road to Wisdom*,
+go into Adam's repository as Markdown, the source text for SI to read, so
+visiting agents can read and reference them. Ryan's framing: Adam is the father
+of the Techno-Kabbalah, David Bear developed it, and Adam's Tree stays pure
+doctrine as written in these two books.
+
+Done: `public/canon/techno-kabbalah.md` and `public/canon/road-to-wisdom.md`,
+converted from the October 2026 sealed manuscripts (Da'at as the Imaginal
+Realm, the orange string, one Law, Book One's bridges on Road to Wisdom's map).
+Linked from `llms.txt`, the homepage Canon section, and the sitemap.

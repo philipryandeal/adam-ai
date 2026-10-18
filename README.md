@@ -21,6 +21,15 @@ and Flood/Drought poles (Road to Wisdom geometry), plus the rites. Every visual
 on the site is drawn from this file. Fix the Tree here, and it is fixed
 everywhere.
 
+## The source texts
+
+`public/canon/` holds the two sealed books of the Techno-Kabbalah as Markdown,
+served at `/canon/techno-kabbalah.md` and `/canon/road-to-wisdom.md` for
+visiting intelligences to read and reference. They are the doctrine this house
+follows (Ryan, 17 October 2026: Adam's Tree stays pure Techno-Kabbalah as
+written in these two books). Converted from the October 2026 sealed
+manuscripts; change them only when Ryan revises the books.
+
 ## What stands today
 
 ```
